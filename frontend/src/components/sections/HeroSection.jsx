@@ -60,7 +60,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right: Visual Abstract */}
-        <div className="animate-on-scroll opacity-0 hidden lg:block relative delay-200">
+        <div className="animate-on-scroll opacity-0 relative delay-200 mt-12 lg:mt-0">
           <div className="relative z-10 glass-card p-6 rounded-2xl md:rotate-1 hover:rotate-0 transition-transform duration-500">
 
             {/* Mock Code Interface */}

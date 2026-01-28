@@ -18,7 +18,7 @@ const AboutSection = () => {
                     {/* Left: Code/Architecture Visual */}
                     <div className="animate-on-scroll opacity-0 relative group">
                         <div className="absolute inset-0 bg-primary/20 rounded-2xl transform rotate-3 transition-transform duration-500 group-hover:rotate-6" />
-                        <div className="relative overflow-hidden rounded-2xl bg-[#0f1115] border border-white/10 aspect-[4/5] shadow-2xl flex flex-col">
+                        <div className="relative overflow-hidden rounded-2xl bg-[#0f1115] border border-white/10 min-h-[28rem] h-auto lg:aspect-[4/5] shadow-2xl flex flex-col">
                             {/* Window Header */}
                             <div className="flex items-center px-4 py-3 border-b border-white/5 bg-white/5">
                                 <div className="flex space-x-2">
@@ -80,9 +80,9 @@ const AboutSection = () => {
                                 </div>
                             </div>
 
-                            {/* Floating "Architecture" Badge */}
-                            <div className="absolute bottom-6 right-6">
-                                <div className="glass-card p-4 rounded-xl border-l-4 border-accent animate-float-delayed">
+                            {/* Floating "Architecture" Badge - Relative on Mobile, Absolute on Desktop */}
+                            <div className="p-4 lg:absolute lg:bottom-6 lg:right-6 lg:p-0">
+                                <div className="glass-card p-4 rounded-xl border-l-4 border-accent lg:animate-float-delayed">
                                     <p className="text-white font-heading font-bold text-lg">System Architect</p>
                                     <p className="text-accent text-sm">Clean Code. Scalable Results.</p>
                                 </div>
