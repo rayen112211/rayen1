@@ -1,28 +1,11 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { ArrowRight, ArrowDown, Code, TrendingUp, ShieldCheck } from 'lucide-react';
 import { developerInfo } from '../../data/mock';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const HeroSection = () => {
   const heroRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in-up');
-            entry.target.classList.remove('opacity-0');
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = heroRef.current?.querySelectorAll('.animate-on-scroll');
-    elements?.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
+  useScrollAnimation(heroRef);
 
   return (
     <section
@@ -149,9 +132,16 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground">
+      <a
+        href="#about"
+        onClick={(e) => {
+          e.preventDefault();
+          document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground hover:text-white transition-colors cursor-pointer p-2"
+      >
         <ArrowDown size={24} />
-      </div>
+      </a>
     </section>
   );
 };

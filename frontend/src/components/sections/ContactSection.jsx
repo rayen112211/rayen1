@@ -1,31 +1,35 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { developerInfo } from '../../data/mock';
 import { Mail, ArrowRight, MessageSquare } from 'lucide-react';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const ContactSection = () => {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
+
   return (
-    <section id="contact" className="py-24 bg-card relative overflow-hidden">
+    <section id="contact" ref={sectionRef} className="py-24 bg-card relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/5 via-background to-background pointer-events-none" />
 
       <div className="container-padding relative z-10 text-center">
 
-        <div className="inline-flex items-center px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-medium tracking-wide mb-8 animate-pulse-subtle">
+        <div className="animate-on-scroll opacity-0 inline-flex items-center px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-medium tracking-wide mb-8 animate-pulse-subtle">
           <span className="w-2 h-2 rounded-full bg-primary mr-2" />
           Start Your Transformation
         </div>
 
-        <h2 className="heading-xl text-white mb-6">
+        <h2 className="animate-on-scroll opacity-0 heading-xl text-white mb-6" style={{ transitionDelay: '0.1s' }}>
           Ready to Scale Your <br />
           <span className="text-gradient">Digital Presence?</span>
         </h2>
 
-        <p className="text-muted-foreground text-xl max-w-2xl mx-auto mb-12">
+        <p className="animate-on-scroll opacity-0 text-muted-foreground text-xl max-w-2xl mx-auto mb-12" style={{ transitionDelay: '0.2s' }}>
           You focus on running your business. I'll handle the technology that helps it grow.
           Let's discuss your project today.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <div className="animate-on-scroll opacity-0 flex flex-col sm:flex-row items-center justify-center gap-6" style={{ transitionDelay: '0.3s' }}>
           <a
             href={`mailto:${developerInfo.email}`}
             className="group relative px-8 py-5 bg-primary text-primary-foreground font-bold rounded-xl overflow-hidden shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 min-w-[200px]"
@@ -51,7 +55,7 @@ const ContactSection = () => {
           </a>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-muted-foreground">
+        <div className="animate-on-scroll opacity-0 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-muted-foreground" style={{ transitionDelay: '0.4s' }}>
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-green-500" />
             <span>Response time: &lt; 24 hours</span>

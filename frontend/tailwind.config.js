@@ -84,15 +84,14 @@ module.exports = {
 					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
-			animation: {
-				'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
-				'fade-in': 'fade-in 0.5s ease-out forwards',
-				'scale-in': 'scale-in 0.5s ease-out forwards',
-				'slide-in-right': 'slide-in-right 0.5s ease-out forwards',
-				'pulse-subtle': 'pulse-subtle 3s ease-in-out infinite',
-				'float': 'float 6s ease-in-out infinite',
-			}
+			'fade-in-up': 'fade-in-up 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+			'fade-in': 'fade-in 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+			'scale-in': 'scale-in 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+			'slide-in-right': 'slide-in-right 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards',
+			'pulse-subtle': 'pulse-subtle 4s ease-in-out infinite',
+			'float': 'float 6s ease-in-out infinite',
 		}
-	},
+	}
+},
 	plugins: [require("tailwindcss-animate")],
 };

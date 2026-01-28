@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { services } from '../../data/mock';
-import { ArrowUpRight } from 'lucide-react';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const ServicesSection = () => {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
+
   return (
-    <section id="services" className="py-24 bg-background relative">
+    <section id="services" ref={sectionRef} className="py-24 bg-background relative">
       <div className="container-padding">
 
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="animate-on-scroll opacity-0 text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary text-sm font-bold tracking-widest uppercase mb-4 block">What I Deliver</span>
           <h2 className="heading-lg text-white mb-6">
             Comprehensive Solutions for <span className="text-gradient">Modern Businesses</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            I don't just sell "websites". I provide the digital infrastructure your business needs to grow, operate efficienty, and scale.
+            I don't just sell "websites". I provide the digital infrastructure your business needs to grow, operate efficiently, and scale.
           </p>
         </div>
 
@@ -21,7 +24,8 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="group relative p-8 rounded-2xl bg-card border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+              className="animate-on-scroll opacity-0 group relative p-8 rounded-2xl bg-card border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
 

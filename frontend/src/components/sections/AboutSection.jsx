@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Award, Briefcase, GraduationCap, Globe } from 'lucide-react';
 import { developerInfo } from '../../data/mock';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const AboutSection = () => {
+    const sectionRef = useRef(null);
+    useScrollAnimation(sectionRef);
+
     return (
-        <section id="about" className="py-24 bg-card relative overflow-hidden">
+        <section id="about" ref={sectionRef} className="py-24 bg-card relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
 
@@ -12,7 +16,7 @@ const AboutSection = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left: Code/Architecture Visual */}
-                    <div className="relative group">
+                    <div className="animate-on-scroll opacity-0 relative group">
                         <div className="absolute inset-0 bg-primary/20 rounded-2xl transform rotate-3 transition-transform duration-500 group-hover:rotate-6" />
                         <div className="relative overflow-hidden rounded-2xl bg-[#0f1115] border border-white/10 aspect-[4/5] shadow-2xl flex flex-col">
                             {/* Window Header */}
@@ -87,7 +91,7 @@ const AboutSection = () => {
                     </div>
 
                     {/* Right: Content */}
-                    <div className="space-y-8">
+                    <div className="animate-on-scroll opacity-0 space-y-8" style={{ transitionDelay: '0.2s' }}>
                         <div>
                             <h2 className="heading-lg text-white mb-6">
                                 Bridging the Gap Between <br />

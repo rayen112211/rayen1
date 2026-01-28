@@ -31,8 +31,8 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? 'bg-background/80 backdrop-blur-md py-4 border-b border-white/5'
-          : 'bg-transparent py-6'
+        ? 'bg-background/80 backdrop-blur-md py-4 border-b border-white/5'
+        : 'bg-transparent py-6'
         }`}
     >
       <div className="container px-6 md:px-12 mx-auto flex items-center justify-between">
@@ -85,8 +85,11 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-[72px] bg-background/98 backdrop-blur-lg z-40 transition-all duration-500 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        className={`lg:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-xl transition-all duration-500 ease-in-out ${isMobileMenuOpen
+            ? 'opacity-100 visible translate-y-0'
+            : 'opacity-0 invisible -translate-y-full'
           }`}
+        style={{ top: '0px', paddingTop: '80px' }}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-8">
           {navLinks.map((link, index) => (
@@ -94,9 +97,9 @@ const Header = () => {
               key={link.href}
               href={link.href}
               onClick={(e) => scrollToSection(e, link.href)}
-              className={`text-white text-2xl font-bold uppercase tracking-wider hover:text-primary transition-all duration-300 ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+              className={`text-2xl font-bold uppercase tracking-wider hover:text-primary transition-all duration-300 transform ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                 }`}
-              style={{ transitionDelay: `${index * 0.1}s` }}
+              style={{ transitionDelay: `${index * 0.1 + 0.2}s` }}
             >
               {link.label}
             </a>
@@ -104,7 +107,7 @@ const Header = () => {
           <a
             href="#contact"
             onClick={(e) => scrollToSection(e, '#contact')}
-            className={`px-8 py-3 bg-primary text-primary-foreground font-bold rounded-lg mt-4 transition-all duration-300 ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+            className={`px-8 py-3 bg-primary text-primary-foreground font-bold rounded-lg mt-4 transition-all duration-300 transform hover:scale-105 ${isMobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
               }`}
             style={{ transitionDelay: '0.4s' }}
           >

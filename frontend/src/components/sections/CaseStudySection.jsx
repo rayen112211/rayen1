@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { caseStudy } from '../../data/mock';
 import { ArrowUpRight, CheckCircle2, ShoppingBag } from 'lucide-react';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 
 const CaseStudySection = () => {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
+
   return (
-    <section id="work" className="py-24 bg-card relative overflow-hidden">
+    <section id="work" ref={sectionRef} className="py-24 bg-card relative overflow-hidden">
 
       <div className="container-padding relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
 
           {/* Left: Content */}
-          <div className="lg:w-1/2 space-y-8">
+          <div className="animate-on-scroll opacity-0 lg:w-1/2 space-y-8">
             <div className="inline-flex items-center space-x-2 text-primary text-sm font-bold tracking-widest uppercase">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span>Featured Success Story</span>
@@ -53,7 +57,7 @@ const CaseStudySection = () => {
           </div>
 
           {/* Right: Visual Showcase */}
-          <div className="lg:w-1/2 relative">
+          <div className="animate-on-scroll opacity-0 lg:w-1/2 relative" style={{ transitionDelay: '0.2s' }}>
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
 
             <div className="relative z-10 group">
