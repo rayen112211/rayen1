@@ -2,10 +2,22 @@ import React, { useRef } from 'react';
 import { developerInfo } from '../../data/mock';
 import { Mail, ArrowRight, MessageSquare } from 'lucide-react';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useToast } from '../../hooks/use-toast';
 
 const ContactSection = () => {
   const sectionRef = useRef(null);
   useScrollAnimation(sectionRef);
+  const { toast } = useToast();
+
+  const handleEmailClick = (e) => {
+    // We allow the default mailto: behavior, but also copy to clipboard
+    // just in case the user doesn't have a mail client configured.
+    navigator.clipboard.writeText(developerInfo.email);
+    toast({
+      title: "Email Copied!",
+      description: "Address copied to clipboard in case mail app doesn't open.",
+    });
+  };
 
   return (
     <section id="contact" ref={sectionRef} className="py-24 bg-card relative overflow-hidden">
@@ -32,7 +44,8 @@ const ContactSection = () => {
         <div className="animate-on-scroll opacity-0 flex flex-col sm:flex-row items-center justify-center gap-6" style={{ transitionDelay: '0.3s' }}>
           <a
             href={`mailto:${developerInfo.email}`}
-            className="group relative px-8 py-5 bg-primary text-primary-foreground font-bold rounded-xl overflow-hidden shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 min-w-[200px]"
+            onClick={handleEmailClick}
+            className="group relative px-8 py-5 bg-primary text-primary-foreground font-bold rounded-xl overflow-hidden shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all duration-300 min-w-[200px] cursor-pointer"
           >
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             <span className="relative flex items-center justify-center gap-3">
