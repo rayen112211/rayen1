@@ -48,6 +48,11 @@ const PricingSection = () => {
                                     </p>
                                     <h3 className="text-3xl font-bold text-white">{plan.title}</h3>
                                     <div className="text-2xl font-mono text-white/90">{plan.price}</div>
+                                    {plan.paymentStructure && (
+                                        <p className="text-xs font-semibold text-accent uppercase tracking-wider bg-accent/10 py-1.5 px-3 rounded-md inline-block mt-2 mb-1">
+                                            {plan.paymentStructure}
+                                        </p>
+                                    )}
                                     <p className="text-muted-foreground text-sm leading-relaxed border-t border-white/5 pt-4">
                                         {plan.description}
                                     </p>
