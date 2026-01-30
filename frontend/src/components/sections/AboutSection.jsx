@@ -17,8 +17,9 @@ const AboutSection = () => {
 
                     {/* Left: Simple, Clear Profile Visual */}
                     <div className="animate-on-scroll opacity-0 relative group">
-                        <div className="absolute inset-0 bg-primary/20 rounded-2xl transform rotate-2 transition-transform duration-500 group-hover:rotate-6" />
-                        <div className="relative overflow-hidden rounded-2xl bg-card border border-white/10 aspect-square lg:aspect-[4/5] shadow-2xl flex flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-card to-[#0f1115]">
+                        <div className="absolute inset-0 bg-primary/20 rounded-2xl transform rotate-2 transition-transform duration-500 group-hover:rotate-6 sm:rotate-2 sm:group-hover:rotate-6 hidden sm:block" />
+                        <div className="absolute inset-0 bg-primary/20 rounded-2xl transform rotate-1 sm:hidden" />
+                        <div className="relative overflow-hidden rounded-2xl bg-card border border-white/10 w-full h-auto lg:aspect-[4/5] shadow-2xl flex flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-card to-[#0f1115]">
 
                             {/* Avatar / Placeholder */}
                             <div className="w-32 h-32 rounded-full bg-gradient-to-tr from-primary to-accent mb-6 p-1">
