@@ -79,10 +79,19 @@ export const translations = {
         },
         caseStudy: {
             label: "Featured Success Story",
+            title: "Unyamee.shop – A Global E-Commerce Ecosystem",
+            challenge: "The client needed a scalable, international e-commerce platform capable of handling multi-currency transactions, real-time inventory tracking for thousands of SKUs, and a seamless mobile experience for a fashion-forward audience.",
             solutionTitle: "The Solution",
+            solution: "I engineered a custom full-stack solution using React and Python. Key features included a dynamic product filtering engine, a secure checkout flow integrated with Stripe, and a custom admin panel that reduced inventory management time by 40%.",
             visitSite: "Visit Live Site",
             salesLive: "Sales",
-            live: "Live"
+            live: "Live",
+            results: [
+                "35% Increase in Mobile Conversions",
+                "Sub-2s Page Load Speeds",
+                "Automated Order Processing",
+                "100% Secure Payment Uptime"
+            ]
         },
         pricing: {
             label: "Investment Strategy",
@@ -228,10 +237,19 @@ export const translations = {
         },
         caseStudy: {
             label: "Storia di Successo",
+            title: "Unyamee.shop – Un Ecosistema E-Commerce Globale",
+            challenge: "Il cliente necessitava di una piattaforma e-commerce scalabile e internazionale, capace di gestire transazioni multi-valuta, tracciamento inventario in tempo reale per migliaia di SKU e un'esperienza mobile fluida per un pubblico fashion.",
             solutionTitle: "La Soluzione",
+            solution: "Ho ingegnerizzato una soluzione full-stack personalizzata usando React e Python. Le funzionalità chiave includono un motore di filtri dinamico, un checkout sicuro integrato con Stripe e un pannello admin che ha ridotto la gestione dell'inventario del 40%.",
             visitSite: "Visita Sito Live",
             salesLive: "Sales",
-            live: "Live"
+            live: "Live",
+            results: [
+                "35% Aumento Conversioni Mobile",
+                "Caricamento Pagina < 2s",
+                "Processo Ordini Automatizzato",
+                "100% Uptime Pagamenti Sicuri"
+            ]
         },
         pricing: {
             label: "Strategia di Investimento",
@@ -369,7 +387,7 @@ export const translations = {
                 },
                 {
                     id: 4,
-                    title: "Automatisation de Workflow",
+                    title: "Automazione de Workflow",
                     description: "Arrêtez les tâches répétitives. J'intègre votre site avec des CRM et outils marketing pour mettre votre entreprise en pilote automatique.",
                     features: ["Intégrations API", "Séquences Email Auto", "Notifications Temps Réel"]
                 }
@@ -377,10 +395,19 @@ export const translations = {
         },
         caseStudy: {
             label: "Succès en Vedette",
+            title: "Unyamee.shop – Un Écosystème E-Commerce Global",
+            challenge: "Le client avait besoin d'une plateforme e-commerce scalable et internationale, capable de gérer des transactions multi-devises, un suivi d'inventaire temps réel pour des milliers de SKU, et une expérience mobile fluide.",
             solutionTitle: "La Solution",
+            solution: "J'ai conçu une solution full-stack sur mesure avec React et Python. Les fonctionnalités clés incluent un moteur de filtrage dynamique, un flux de paiement sécurisé intégré avec Stripe, et un panneau admin réduisant le temps de gestion d'inventaire de 40%.",
             visitSite: "Voir Site Live",
             salesLive: "Sales",
-            live: "Live"
+            live: "Live",
+            results: [
+                "35% Augmentation Conversions Mobile",
+                "Vitesse Chargement < 2s",
+                "Traitement Commandes Automatisé",
+                "100% Uptime Paiements Sécurisés"
+            ]
         },
         pricing: {
             label: "Stratégie d'Investissement",
@@ -526,10 +553,19 @@ export const translations = {
         },
         caseStudy: {
             label: "Wyróżnione Success Story",
+            title: "Unyamee.shop – Globalny Ekosystem E-Commerce",
+            challenge: "Klient potrzebował skalowalnej, międzynarodowej platformy e-commerce obsługującej wiele walut, śledzenie zapasów w czasie rzeczywistym dla tysięcy produktów i płynne doświadczenie mobilne.",
             solutionTitle: "Rozwiązanie",
+            solution: "Stworzyłem dedykowane rozwiązanie full-stack używając React i Python. Kluczowe funkcje to dynamiczny silnik filtrowania, bezpieczny checkout zintegrowany ze Stripe i panel admina redukujący czas zarządzania o 40%.",
             visitSite: "Odwiedź Stronę",
             salesLive: "Sales",
-            live: "Live"
+            live: "Live",
+            results: [
+                "35% Wzrost Konwersji Mobilnych",
+                "Czas Ładowania < 2s",
+                "Automatyczne Przetwarzanie",
+                "100% Uptime Płatności"
+            ]
         },
         pricing: {
             label: "Strategia Inwestycyjna",

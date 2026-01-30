@@ -67,16 +67,22 @@ const Header = () => {
         {/* Right side container */}
         <div className="flex items-center gap-4">
 
-          <LanguageSwitcher />
+          {/* CTA Button and LanguageSwitcher - Desktop only */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <LanguageSwitcher />
+            <a
+              href="#contact"
+              onClick={(e) => scrollToSection(e, '#contact')}
+              className="px-6 py-2.5 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors text-sm"
+            >
+              {t.header.startProject}
+            </a>
+          </div>
 
-          {/* CTA Button - Desktop only */}
-          <a
-            href="#contact"
-            onClick={(e) => scrollToSection(e, '#contact')}
-            className="hidden lg:inline-flex px-6 py-2.5 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors text-sm"
-          >
-            {t.header.startProject}
-          </a>
+          {/* LanguageSwitcher for mobile/tablet */}
+          <div className="lg:hidden">
+            <LanguageSwitcher />
+          </div>
 
           {/* Mobile Menu Button */}
           <button

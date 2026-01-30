@@ -23,22 +23,22 @@ const CaseStudySection = () => {
             </div>
 
             <h2 className="heading-lg text-white">
-              {caseStudy.title}
+              {t.caseStudy.title}
             </h2>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              {caseStudy.challenge}
+              {t.caseStudy.challenge}
             </p>
 
             <div className="glass-card p-6 rounded-2xl border-l-4 border-primary bg-background/50">
               <h4 className="text-white font-bold mb-2">{t.caseStudy.solutionTitle}</h4>
               <p className="text-secondary-foreground text-sm">
-                {caseStudy.solution}
+                {t.caseStudy.solution}
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {caseStudy.results.map((result, index) => (
+              {t.caseStudy.results.map((result, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" />
                   <span className="text-white font-medium">{result}</span>
