@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import LanguageSwitcher from '../ui/LanguageSwitcher';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,9 +17,9 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Work', href: '#work' },
+    { label: t.header.about, href: '#about' },
+    { label: t.header.services, href: '#services' },
+    { label: t.header.work, href: '#work' },
   ];
 
   const scrollToSection = (e, href) => {
@@ -63,13 +66,16 @@ const Header = () => {
 
         {/* Right side container */}
         <div className="flex items-center gap-4">
+
+          <LanguageSwitcher />
+
           {/* CTA Button - Desktop only */}
           <a
             href="#contact"
             onClick={(e) => scrollToSection(e, '#contact')}
             className="hidden lg:inline-flex px-6 py-2.5 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors text-sm"
           >
-            Start Project
+            {t.header.startProject}
           </a>
 
           {/* Mobile Menu Button */}
@@ -86,8 +92,8 @@ const Header = () => {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden fixed inset-0 z-40 bg-background/95 backdrop-blur-xl transition-all duration-500 ease-in-out ${isMobileMenuOpen
-            ? 'opacity-100 visible translate-y-0'
-            : 'opacity-0 invisible -translate-y-full'
+          ? 'opacity-100 visible translate-y-0'
+          : 'opacity-0 invisible -translate-y-full'
           }`}
         style={{ top: '0px', paddingTop: '80px' }}
       >
@@ -111,7 +117,7 @@ const Header = () => {
               }`}
             style={{ transitionDelay: '0.4s' }}
           >
-            Start Project
+            {t.header.startProject}
           </a>
         </nav>
       </div>

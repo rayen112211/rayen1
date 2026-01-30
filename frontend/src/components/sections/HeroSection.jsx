@@ -1,11 +1,13 @@
+
 import React, { useRef } from 'react';
-import { ArrowRight, ArrowDown, Code, TrendingUp, ShieldCheck } from 'lucide-react';
-import { developerInfo } from '../../data/mock';
+import { ArrowRight, ArrowDown, TrendingUp, ShieldCheck } from 'lucide-react';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useLanguage } from '../../context/LanguageContext';
 
 const HeroSection = () => {
   const heroRef = useRef(null);
   useScrollAnimation(heroRef);
+  const { t } = useLanguage();
 
   return (
     <section
@@ -27,16 +29,16 @@ const HeroSection = () => {
           <div className="animate-on-scroll opacity-0 space-y-4">
             <span className="inline-flex items-center px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-medium tracking-wide">
               <span className="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse" />
-              Accepting New Clients
+              {t.hero.status}
             </span>
             <h1 className="heading-xl tracking-tight text-white">
-              Websites That Turn <br />
-              <span className="text-gradient">Visitors Into Clients.</span>
+              {t.hero.titleStart} <br />
+              <span className="text-gradient">{t.hero.titleEnd}</span>
             </h1>
           </div>
 
           <p className="animate-on-scroll opacity-0 text-muted-foreground text-lg md:text-xl max-w-lg leading-relaxed delay-100">
-            I build high-performance, premium websites designed to grow your business. Stop losing customers to slow, outdated sites.
+            {t.hero.subtitle}
           </p>
 
           <div className="animate-on-scroll opacity-0 flex flex-col sm:flex-row gap-4 pt-4 delay-200">
@@ -46,14 +48,14 @@ const HeroSection = () => {
             >
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
               <span className="relative flex items-center gap-2">
-                Get a Free Quote <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                {t.hero.ctaPrimary} <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </a>
             <a
               href="#work"
               className="px-8 py-4 rounded-lg border border-border text-foreground font-medium hover:bg-muted/50 transition-colors flex items-center justify-center gap-2"
             >
-              View My Work
+              {t.hero.ctaSecondary}
             </a>
           </div>
 
@@ -71,18 +73,18 @@ const HeroSection = () => {
             </div>
 
             <div className="text-center space-y-2">
-              <h3 className="text-2xl font-bold text-white">Business Growth</h3>
-              <p className="text-muted-foreground">Optimized for Conversion & Speed</p>
+              <h3 className="text-2xl font-bold text-white">{t.hero.card.title}</h3>
+              <p className="text-muted-foreground">{t.hero.card.subtitle}</p>
             </div>
 
             {/* Stats/Proof */}
             <div className="grid grid-cols-2 gap-4 w-full pt-4">
               <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-center hover:border-primary/50 transition-colors">
                 <div className="text-2xl font-bold text-white">100%</div>
-                <div className="text-xs text-muted-foreground">Performance</div>
+                <div className="text-xs text-muted-foreground">{t.hero.card.performance}</div>
               </div>
               <div className="p-4 rounded-xl bg-white/5 border border-white/10 text-center hover:border-primary/50 transition-colors">
-                <div className="text-2xl font-bold text-white">SEO</div>
+                <div className="text-2xl font-bold text-white">{t.hero.card.seo}</div>
                 <div className="text-xs text-muted-foreground">Optimized</div>
               </div>
             </div>
@@ -93,8 +95,8 @@ const HeroSection = () => {
                 <ShieldCheck size={18} />
               </div>
               <div>
-                <div className="text-xs text-muted-foreground">Secure</div>
-                <div className="text-sm font-bold text-white">SSL Ready</div>
+                <div className="text-xs text-muted-foreground">{t.hero.card.secure}</div>
+                <div className="text-sm font-bold text-white">{t.hero.card.ssl}</div>
               </div>
             </div>
 

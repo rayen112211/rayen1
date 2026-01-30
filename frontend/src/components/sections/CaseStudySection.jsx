@@ -2,10 +2,12 @@ import React, { useRef } from 'react';
 import { caseStudy } from '../../data/mock';
 import { ArrowUpRight, CheckCircle2, ShoppingBag } from 'lucide-react';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useLanguage } from '../../context/LanguageContext';
 
 const CaseStudySection = () => {
   const sectionRef = useRef(null);
   useScrollAnimation(sectionRef);
+  const { t } = useLanguage();
 
   return (
     <section id="work" ref={sectionRef} className="py-24 bg-card relative overflow-hidden">
@@ -17,7 +19,7 @@ const CaseStudySection = () => {
           <div className="animate-on-scroll opacity-0 lg:w-1/2 space-y-8">
             <div className="inline-flex items-center space-x-2 text-primary text-sm font-bold tracking-widest uppercase">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span>Featured Success Story</span>
+              <span>{t.caseStudy.label}</span>
             </div>
 
             <h2 className="heading-lg text-white">
@@ -29,7 +31,7 @@ const CaseStudySection = () => {
             </p>
 
             <div className="glass-card p-6 rounded-2xl border-l-4 border-primary bg-background/50">
-              <h4 className="text-white font-bold mb-2">The Solution</h4>
+              <h4 className="text-white font-bold mb-2">{t.caseStudy.solutionTitle}</h4>
               <p className="text-secondary-foreground text-sm">
                 {caseStudy.solution}
               </p>
@@ -51,7 +53,7 @@ const CaseStudySection = () => {
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-lg hover:bg-white/90 transition-colors"
               >
-                Visit Live Site <ArrowUpRight className="w-5 h-5" />
+                {t.caseStudy.visitSite} <ArrowUpRight className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -82,8 +84,8 @@ const CaseStudySection = () => {
                       <ShoppingBag className="w-4 h-4 lg:w-5 lg:h-5" />
                     </div>
                     <div>
-                      <div className="text-[10px] lg:text-xs text-muted-foreground">Sales</div>
-                      <div className="text-sm lg:text-lg font-bold text-white">Live</div>
+                      <div className="text-[10px] lg:text-xs text-muted-foreground">{t.caseStudy.salesLive}</div>
+                      <div className="text-sm lg:text-lg font-bold text-white">{t.caseStudy.live}</div>
                     </div>
                   </div>
                 </div>

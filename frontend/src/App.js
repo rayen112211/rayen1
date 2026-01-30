@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import { Toaster } from './components/ui/toaster';
+import { LanguageProvider } from './context/LanguageContext';
 
 // New Component Flow
 import HeroSection from './components/sections/HeroSection';
@@ -36,14 +37,16 @@ const LandingPage = () => {
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-        </Routes>
-      </BrowserRouter>
-      <Toaster />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+          </Routes>
+        </BrowserRouter>
+        <Toaster />
+      </div>
+    </LanguageProvider>
   );
 }
 

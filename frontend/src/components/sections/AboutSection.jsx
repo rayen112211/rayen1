@@ -1,11 +1,12 @@
 import React, { useRef } from 'react';
 import { Award, Briefcase, GraduationCap, Globe } from 'lucide-react';
-import { developerInfo } from '../../data/mock';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useLanguage } from '../../context/LanguageContext';
 
 const AboutSection = () => {
     const sectionRef = useRef(null);
     useScrollAnimation(sectionRef);
+    const { t } = useLanguage();
 
     return (
         <section id="about" ref={sectionRef} className="py-24 bg-card relative overflow-hidden">
@@ -28,13 +29,13 @@ const AboutSection = () => {
                                 </div>
                             </div>
 
-                            <h3 className="heading-lg text-white mb-2">Rayen Lazizi</h3>
-                            <p className="text-primary font-medium tracking-wide mb-6">Full Stack Developer & Strategist</p>
+                            <h3 className="heading-lg text-white mb-2">{t.about.title}</h3>
+                            <p className="text-primary font-medium tracking-wide mb-6">{t.about.role}</p>
 
                             <div className="w-full h-px bg-white/10 my-4" />
 
                             <p className="text-muted-foreground italic">
-                                "I don't just write code involved. I build digital assets that bring you more revenue."
+                                {t.about.quote}
                             </p>
                         </div>
                     </div>
@@ -43,36 +44,36 @@ const AboutSection = () => {
                     <div className="animate-on-scroll opacity-0 space-y-8" style={{ transitionDelay: '0.2s' }}>
                         <div>
                             <h2 className="heading-lg text-white mb-6">
-                                Who Am I? <br />
-                                <span className="text-gradient">Your Tech Partner.</span>
+                                {t.about.whoAmI.title} <br />
+                                <span className="text-gradient">{t.about.whoAmI.subtitle}</span>
                             </h2>
                             <p className="text-muted-foreground text-lg leading-relaxed">
-                                I'm not just another freelancer who delivers a template. I am a dedicated developer who understands that your website is an investment.
+                                {t.about.whoAmI.p1}
                                 <br /><br />
-                                My goal is to make your business stand out in a crowded market. I focus on speed, design, and user experience to ensure every visitor trusts you instantly.
+                                {t.about.whoAmI.p2}
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="p-4 rounded-xl bg-background border border-white/5 hover:border-primary/50 transition-colors">
                                 <Award className="w-8 h-8 text-yellow-400 mb-3" />
-                                <h4 className="text-white font-bold mb-1">Results Driven</h4>
-                                <p className="text-sm text-muted-foreground">Focus on ROI, Speed, and SEO ranking.</p>
+                                <h4 className="text-white font-bold mb-1">{t.about.cards.results.title}</h4>
+                                <p className="text-sm text-muted-foreground">{t.about.cards.results.desc}</p>
                             </div>
                             <div className="p-4 rounded-xl bg-background border border-white/5 hover:border-primary/50 transition-colors">
                                 <Briefcase className="w-8 h-8 text-purple-400 mb-3" />
-                                <h4 className="text-white font-bold mb-1">Business Mindset</h4>
-                                <p className="text-sm text-muted-foreground">I speak your language, not just code.</p>
+                                <h4 className="text-white font-bold mb-1">{t.about.cards.business.title}</h4>
+                                <p className="text-sm text-muted-foreground">{t.about.cards.business.desc}</p>
                             </div>
                             <div className="p-4 rounded-xl bg-background border border-white/5 hover:border-primary/50 transition-colors">
                                 <Globe className="w-8 h-8 text-accent mb-3" />
-                                <h4 className="text-white font-bold mb-1">Modern Tech</h4>
-                                <p className="text-sm text-muted-foreground">Built with the latest, fastest technologies.</p>
+                                <h4 className="text-white font-bold mb-1">{t.about.cards.tech.title}</h4>
+                                <p className="text-sm text-muted-foreground">{t.about.cards.tech.desc}</p>
                             </div>
                             <div className="p-4 rounded-xl bg-background border border-white/5 hover:border-primary/50 transition-colors">
                                 <GraduationCap className="w-8 h-8 text-primary mb-3" />
-                                <h4 className="text-white font-bold mb-1">Expertise</h4>
-                                <p className="text-sm text-muted-foreground">Continuous learning and professional engineering.</p>
+                                <h4 className="text-white font-bold mb-1">{t.about.cards.expertise.title}</h4>
+                                <p className="text-sm text-muted-foreground">{t.about.cards.expertise.desc}</p>
                             </div>
                         </div>
                     </div>

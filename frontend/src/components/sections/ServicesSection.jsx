@@ -1,58 +1,60 @@
 import React, { useRef } from 'react';
-import { services } from '../../data/mock';
+import { Layout, Globe, Zap, Shield, CheckCircle2 } from 'lucide-react';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
+import { useLanguage } from '../../context/LanguageContext';
 
 const ServicesSection = () => {
   const sectionRef = useRef(null);
   useScrollAnimation(sectionRef);
+  const { t } = useLanguage();
+
+  const iconMap = [Layout, Globe, Zap, Shield];
 
   return (
-    <section id="services" ref={sectionRef} className="py-24 bg-background relative">
-      <div className="container-padding">
+    <section id="services" ref={sectionRef} className="py-24 bg-background relative overflow-hidden">
+      <div className="container-padding relative z-10">
 
-        <div className="animate-on-scroll opacity-0 text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary text-sm font-bold tracking-widest uppercase mb-4 block">What I Deliver</span>
-          <h2 className="heading-lg text-white mb-6">
-            Comprehensive Solutions for <span className="text-gradient">Modern Businesses</span>
+        {/* Section Header */}
+        <div className="animate-on-scroll opacity-0 text-center max-w-2xl mx-auto mb-16 space-y-4">
+          <span className="text-primary text-sm font-bold tracking-widest uppercase">{t.services.label}</span>
+          <h2 className="heading-lg text-white">
+            {t.services.title} <span className="text-gradient">{t.services.titleGradient}</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            I don't just sell "websites". I provide the digital infrastructure your business needs to grow, operate efficiently, and scale.
+            {t.services.description}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <div
-              key={service.id}
-              className="animate-on-scroll opacity-0 group relative p-8 rounded-2xl bg-card border border-white/5 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
-
-              <div className="relative z-10">
-                <div className="w-12 h-12 rounded-lg bg-background border border-border flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform duration-500">
-                  {service.icon}
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {t.services.items.map((service, index) => {
+            const Icon = iconMap[index % iconMap.length];
+            return (
+              <div
+                key={service.id}
+                className="animate-on-scroll opacity-0 glass-card p-8 rounded-2xl hover:bg-white/5 transition-all duration-300 group border border-white/5 hover:border-primary/50"
+                style={{ transitionDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white text-primary transition-colors">
+                  <Icon size={28} />
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center text-xs text-secondary-foreground/80">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
+                    <li key={i} className="flex items-center text-sm text-secondary-foreground">
+                      <CheckCircle2 className="w-4 h-4 text-accent mr-2" />
                       {feature}
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
