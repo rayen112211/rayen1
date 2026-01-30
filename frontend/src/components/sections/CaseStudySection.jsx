@@ -63,8 +63,8 @@ const CaseStudySection = () => {
             <div className="relative z-10 group">
               {/* Main Monitor/Laptop Frame */}
               <div className="glass-card p-2 rounded-2xl border border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]">
-                <div className="rounded-xl overflow-hidden aspect-video bg-black relative">
-                  <div className="absolute top-0 w-full h-8 bg-black flex items-center px-4 space-x-2 border-b border-white/10">
+                <div className="rounded-xl overflow-hidden aspect-[4/3] lg:aspect-video bg-black relative">
+                  <div className="absolute top-0 w-full h-8 bg-black flex items-center px-4 space-x-2 border-b border-white/10 z-20">
                     <div className="w-3 h-3 rounded-full bg-red-500" />
                     <div className="w-3 h-3 rounded-full bg-yellow-500" />
                     <div className="w-3 h-3 rounded-full bg-green-500" />
@@ -73,17 +73,17 @@ const CaseStudySection = () => {
                   <img
                     src={caseStudy.image}
                     alt="Unyamee.shop Preview"
-                    className="w-full h-full object-cover mt-8"
+                    className="w-full h-full object-cover object-top mt-8"
                   />
 
                   {/* Floating Badge */}
-                  <div className="absolute bottom-6 right-6 glass-card p-4 rounded-xl flex items-center gap-3 animate-float-delayed">
-                    <div className="p-2 bg-pink-500/20 rounded-lg text-pink-400">
-                      <ShoppingBag size={20} />
+                  <div className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 glass-card p-3 lg:p-4 rounded-xl flex items-center gap-2 lg:gap-3 animate-float-delayed">
+                    <div className="p-1.5 lg:p-2 bg-pink-500/20 rounded-lg text-pink-400">
+                      <ShoppingBag className="w-4 h-4 lg:w-5 lg:h-5" />
                     </div>
                     <div>
-                      <div className="text-xs text-muted-foreground">Sales</div>
-                      <div className="text-lg font-bold text-white">Live</div>
+                      <div className="text-[10px] lg:text-xs text-muted-foreground">Sales</div>
+                      <div className="text-sm lg:text-lg font-bold text-white">Live</div>
                     </div>
                   </div>
                 </div>
