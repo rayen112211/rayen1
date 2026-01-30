@@ -103,7 +103,8 @@ export const translations = {
                 {
                     type: "Essential Build",
                     title: "The Foundation",
-                    price: "Custom Quote",
+                    price: "€400 - €1.200",
+                    paymentStructure: "50% Upfront • 50% on Completion",
                     description: "The core investment. I design and build your custom platform from scratch. You own 100% of the code and assets forever.",
                     features: ["Custom UI/UX Design", "Mobile Responsive Development", "SEO Infrastructure Setup", "Admin Panel Configuration", "One-time Payment"],
                     badge: ""
@@ -111,7 +112,7 @@ export const translations = {
                 {
                     type: "Optional Maintenance",
                     title: "Peace of Mind",
-                    price: "Starts at $50/mo",
+                    price: "Starts at €50/mo",
                     description: "Secure your investment. I handle hosting, updates, and technical issues so you never have to verify plugins or servers.",
                     features: ["Premium High-Speed Hosting", "Domain Name Management", "Weekly Security Updates", "24/7 Uptime Monitoring", "Cancel Anytime"],
                     badge: "Recommended Add-on"
@@ -261,7 +262,8 @@ export const translations = {
                 {
                     type: "Costruzione Essenziale",
                     title: "Le Fondamenta",
-                    price: "Preventivo Personalizzato",
+                    price: "€400 - €1.200",
+                    paymentStructure: "50% Acconto • 50% alla Consegna",
                     description: "L'investimento principale. Progetto e costruisco la tua piattaforma personalizzata da zero. Possiedi il 100% del codice e degli asset per sempre.",
                     features: ["Design UI/UX Personalizzato", "Sviluppo Mobile Responsive", "Setup Infrastruttura SEO", "Configurazione Pannello Admin", "Pagamento Unico"],
                     badge: ""
@@ -419,7 +421,8 @@ export const translations = {
                 {
                     type: "Construction Essentielle",
                     title: "La Fondation",
-                    price: "Devis Personnalisé",
+                    price: "€400 - €1.200",
+                    paymentStructure: "50% Acompte • 50% à la Livraison",
                     description: "L'investissement principal. Je conçois et construis votre plateforme sur mesure de zéro. Vous possédez 100% du code et des actifs pour toujours.",
                     features: ["Design UI/UX Personnalisé", "Développement Mobile Responsive", "Configuration Infrastructure SEO", "Configuration Panneau Admin", "Paiement Unique"],
                     badge: ""
@@ -577,7 +580,8 @@ export const translations = {
                 {
                     type: "Niezbędna Budowa",
                     title: "Fundament",
-                    price: "Wycena Indywidualna",
+                    price: "€400 - €1.200",
+                    paymentStructure: "50% Zadatek • 50% przy Odbiorze",
                     description: "Główna inwestycja. Projektuję i buduję Twoją platformę od zera. Jesteś właścicielem 100% kodu i zasobów na zawsze.",
                     features: ["Dedykowany Design UI/UX", "Responsywność Mobilna", "Infrastruktura SEO", "Konfiguracja Panelu Admina", "Jednorazowa Płatność"],
                     badge: ""
