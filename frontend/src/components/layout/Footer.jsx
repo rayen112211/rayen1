@@ -1,14 +1,16 @@
 import React from 'react';
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
 import { developerInfo } from '../../data/mock';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   const footerLinks = [
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Work', href: '#work' },
+    { label: t.header.about, href: '#about' },
+    { label: t.header.services, href: '#services' },
+    { label: t.header.work, href: '#work' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -32,7 +34,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-muted-foreground max-w-sm mb-6 leading-relaxed">
-              {developerInfo.tagline}
+              {t.footer.tagline}
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -55,14 +57,14 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-3 text-white/70">
                 <MapPin size={18} className="text-primary" />
-                <span>{developerInfo.location}</span>
+                <span>{t.contact.location}</span>
               </div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="md:col-span-3 md:col-start-7">
-            <h4 className="text-white font-bold mb-6">Explore</h4>
+            <h4 className="text-white font-bold mb-6">{t.footer.explore}</h4>
             <nav className="flex flex-col gap-4">
               {footerLinks.map((link) => (
                 <a
@@ -80,16 +82,16 @@ const Footer = () => {
 
           {/* CTA Column */}
           <div className="md:col-span-4">
-            <h4 className="text-white font-bold mb-6">Start Scaling</h4>
+            <h4 className="text-white font-bold mb-6">{t.footer.startScaling}</h4>
             <p className="text-muted-foreground mb-6">
-              Your business deserves a digital platform that performs. Let's build it together.
+              {t.footer.ctaDescription}
             </p>
             <a
               href="#contact"
               onClick={(e) => scrollToSection(e, '#contact')}
               className="inline-flex items-center justify-center px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200 transition-colors"
             >
-              Get in Touch
+              {t.footer.ctaButton}
             </a>
           </div>
         </div>
@@ -97,10 +99,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/5 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>
-            © {currentYear} {developerInfo.name}. All rights reserved.
+            © {currentYear} {developerInfo.name}. {t.footer.rights}
           </p>
           <p>
-            Designed for Impact.
+            {t.footer.designed}
           </p>
         </div>
       </div>

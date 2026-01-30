@@ -31,7 +31,7 @@ export const translations = {
         about: {
             title: "Rayen Lazizi",
             role: "Full Stack Developer & Strategist",
-            quote: "\"I don't just write code involved. I build digital assets that bring you more revenue.\"",
+            quote: "\"I don't just write code. I build digital assets that bring you more revenue.\"",
             whoAmI: {
                 title: "Who Am I?",
                 subtitle: "Your Tech Partner.",
@@ -109,6 +109,29 @@ export const translations = {
                 }
             ]
         },
+        faq: {
+            title: "Common Questions",
+            description: "Transparency is key to a good partnership. Here are honest answers to the questions I get asked most often.",
+            moreQuestions: "Have another question?",
+            items: [
+                {
+                    question: "Do I have to pay the monthly fee?",
+                    answer: "No, it is 100% optional. You can choose to pay only for the website build and manage the hosting yourself. However, for just $50/mo, I ensure your site stays fast, secure, and online without you lifting a finger."
+                },
+                {
+                    question: "How long does it take to build a website?",
+                    answer: "A standard business website typically takes 4-7 days. Complex platforms with custom features (like booking systems or e-commerce) usually take 1-3 weeks. I work efficiently to get you online fast without sacrificing quality."
+                },
+                {
+                    question: "Who owns the website?",
+                    answer: "You do. Once the one-time build fee is paid, you own 100% of the code, design, and content. No lock-in contracts."
+                },
+                {
+                    question: "Can you help me rank on Google?",
+                    answer: "Absolutely. My 'Professional SEO' service is built into the development process. I ensure your site is technically optimized for Google’s algorithms from day one."
+                }
+            ]
+        },
         contact: {
             label: "Start Your Transformation",
             title: "Ready to Scale Your",
@@ -118,13 +141,22 @@ export const translations = {
             whatsappBtn: "WhatsApp",
             responseTime: "Response time: < 24 hours",
             location: "Located in Italy, serving clients worldwide."
+        },
+        footer: {
+            tagline: "I don't just write code. I build high-performance digital engines that scale your business.",
+            explore: "Explore",
+            startScaling: "Start Scaling",
+            ctaDescription: "Your business deserves a digital platform that performs. Let's build it together.",
+            ctaButton: "Get in Touch",
+            rights: "All rights reserved.",
+            designed: "Designed for Impact."
         }
     },
     it: {
         header: {
             about: "Chi Sono",
             services: "Servizi",
-            work: "Progetti",
+            work: "Lavori",
             startProject: "Inizia Progetto"
         },
         hero: {
@@ -136,30 +168,30 @@ export const translations = {
             ctaSecondary: "Vedi i Miei Lavori",
             card: {
                 title: "Crescita Aziendale",
-                subtitle: "Ottimizzato per Conversioni e Velocità",
-                performance: "Prestazioni",
+                subtitle: "Ottimizzato per Conversion & Speed",
+                performance: "Performance",
                 seo: "SEO",
                 secure: "Sicuro",
-                ssl: "SSL Pronto",
-                sales: "Vendite",
+                ssl: "SSL Ready",
+                sales: "Sales",
                 live: "Live"
             }
         },
         about: {
             title: "Rayen Lazizi",
-            role: "Full Stack Developer e Stratega",
+            role: "Full Stack Developer & Strategist",
             quote: "\"Non scrivo solo codice. Costruisco asset digitali che ti portano più entrate.\"",
             whoAmI: {
                 title: "Chi Sono?",
-                subtitle: "Il Tuo Partner Tecnico.",
+                subtitle: "Il Tuo Tech Partner.",
                 p1: "Non sono solo un altro freelancer che consegna un template. Sono uno sviluppatore dedicato che capisce che il tuo sito web è un investimento.",
                 p2: "Il mio obiettivo è far risaltare il tuo business in un mercato affollato. Mi concentro su velocità, design ed esperienza utente per garantire che ogni visitatore si fidi di te all'istante."
             },
             cards: {
-                results: { title: "Orientato ai Risultati", desc: "Focus su ROI, Velocità e SEO." },
+                results: { title: "Orientato ai Risultati", desc: "Focus su ROI, Speed e SEO ranking." },
                 business: { title: "Mentalità Business", desc: "Parlo la tua lingua, non solo codice." },
-                tech: { title: "Tech Moderno", desc: "Costruito con le tecnologie più veloci." },
-                expertise: { title: "Competenza", desc: "Apprendimento continuo e ingegneria professionale." }
+                tech: { title: "Modern Tech", desc: "Costruito con le tecnologie più veloci." },
+                expertise: { title: "Expertise", desc: "Apprendimento continuo e ingegneria professionale." }
             }
         },
         services: {
@@ -198,7 +230,7 @@ export const translations = {
             label: "Storia di Successo",
             solutionTitle: "La Soluzione",
             visitSite: "Visita Sito Live",
-            salesLive: "Vendite",
+            salesLive: "Sales",
             live: "Live"
         },
         pricing: {
@@ -213,7 +245,7 @@ export const translations = {
                     title: "Le Fondamenta",
                     price: "Preventivo Personalizzato",
                     description: "L'investimento principale. Progetto e costruisco la tua piattaforma personalizzata da zero. Possiedi il 100% del codice e degli asset per sempre.",
-                    features: ["Design UI/UX Personalizzato", "Sviluppo Responsive Mobile", "Setup Infrastruttura SEO", "Configurazione Pannello Admin", "Pagamento Unico"],
+                    features: ["Design UI/UX Personalizzato", "Sviluppo Mobile Responsive", "Setup Infrastruttura SEO", "Configurazione Pannello Admin", "Pagamento Unico"],
                     badge: ""
                 },
                 {
@@ -226,6 +258,29 @@ export const translations = {
                 }
             ]
         },
+        faq: {
+            title: "Domande Frequenti",
+            description: "La trasparenza è fondamentale. Ecco risposte oneste alle domande che ricevo più spesso.",
+            moreQuestions: "Hai un'altra domanda?",
+            items: [
+                {
+                    question: "Devo pagare il canone mensile?",
+                    answer: "No, è opzionale al 100%. Puoi scegliere di pagare solo per la costruzione del sito e gestire l'hosting da solo. Tuttavia, per soli €50/mese, assicuro che il tuo sito rimanga veloce, sicuro e online senza che tu debba alzare un dito."
+                },
+                {
+                    question: "Quanto tempo ci vuole per costruire un sito?",
+                    answer: "Un sito aziendale standard richiede in genere 4-7 giorni. Piattaforme complesse con funzionalità personalizzate (come sistemi di prenotazione o e-commerce) richiedono solitamente 1-3 settimane. Lavoro in modo efficiente per metterti online velocemente senza sacrificare la qualità."
+                },
+                {
+                    question: "Chi possiede il sito web?",
+                    answer: "Tu. Una volta pagata la tariffa unica di costruzione, possiedi il 100% del codice, del design e dei contenuti. Nessun contratto vincolante."
+                },
+                {
+                    question: "Puoi aiutarmi a posizionarmi su Google?",
+                    answer: "Assolutamente. Il mio servizio 'SEO Professionale' è integrato nel processo di sviluppo. Assicuro che il tuo sito sia tecnicamente ottimizzato per gli algoritmi di Google fin dal primo giorno."
+                }
+            ]
+        },
         contact: {
             label: "Inizia la Tua Trasformazione",
             title: "Pronto a Scalare la Tua",
@@ -235,6 +290,15 @@ export const translations = {
             whatsappBtn: "WhatsApp",
             responseTime: "Risposta: < 24 ore",
             location: "Basato in Italia, clienti globali."
+        },
+        footer: {
+            tagline: "Non scrivo solo codice. Costruisco motori digitali ad alte prestazioni che fanno scalare il tuo business.",
+            explore: "Esplora",
+            startScaling: "Inizia a Scalare",
+            ctaDescription: "Il tuo business merita una piattaforma digitale che performi. Costruiamola insieme.",
+            ctaButton: "Contattami",
+            rights: "Tutti i diritti riservati.",
+            designed: "Progettato per l'Impatto."
         }
     },
     fr: {
@@ -253,29 +317,29 @@ export const translations = {
             ctaSecondary: "Voir Mes travaux",
             card: {
                 title: "Croissance",
-                subtitle: "Optimisé pour Conversion & Vitesse",
+                subtitle: "Optimisé pour Conversion & Speed",
                 performance: "Performance",
                 seo: "SEO",
                 secure: "Sécure",
-                ssl: "SSL Prêt",
-                sales: "Ventes",
+                ssl: "SSL Ready",
+                sales: "Sales",
                 live: "Live"
             }
         },
         about: {
             title: "Rayen Lazizi",
-            role: "Développeur Full Stack & Stratège",
+            role: "Full Stack Developer & Strategist",
             quote: "\"Je ne fais pas que coder. Je construis des actifs numériques qui vous rapportent plus de revenus.\"",
             whoAmI: {
                 title: "Qui Suis-Je ?",
-                subtitle: "Votre Partenaire Tech.",
+                subtitle: "Votre Tech Partner.",
                 p1: "Je ne suis pas juste un autre freelance qui livre un template. Je suis un développeur dévoué qui comprend que votre site web est un investissement.",
                 p2: "Mon objectif est de faire sortir votre entreprise du lot. Je me concentre sur la vitesse, le design et l'expérience utilisateur pour garantir la confiance instantanée de chaque visiteur."
             },
             cards: {
-                results: { title: "Axé Résultats", desc: "Focus sur ROI, Vitesse et SEO." },
+                results: { title: "Axé Résultats", desc: "Focus sur ROI, Speed et SEO ranking." },
                 business: { title: "Esprit Business", desc: "Je parle votre langue, pas juste du code." },
-                tech: { title: "Tech Moderne", desc: "Construit avec les technologies les plus rapides." },
+                tech: { title: "Modern Tech", desc: "Construit avec les technologies les plus rapides." },
                 expertise: { title: "Expertise", desc: "Apprentissage continu et ingénierie pro." }
             }
         },
@@ -289,7 +353,7 @@ export const translations = {
                     id: 1,
                     title: "Plateformes Business Sur Mesure",
                     description: "Au-delà des templates. Je construis des applications web sur mesure pour vos besoins opérationnels—portail client, système de réservation ou tableau de bord complexe.",
-                    features: ["Architecture React/Next.js", "Base de Données Évolutive", "Authentification Sécurisée"]
+                    features: ["Architecture React/Next.js", "Design Base de Données Scalable", "Authentification Sécurisée"]
                 },
                 {
                     id: 2,
@@ -315,7 +379,7 @@ export const translations = {
             label: "Succès en Vedette",
             solutionTitle: "La Solution",
             visitSite: "Voir Site Live",
-            salesLive: "Ventes",
+            salesLive: "Sales",
             live: "Live"
         },
         pricing: {
@@ -343,6 +407,29 @@ export const translations = {
                 }
             ]
         },
+        faq: {
+            title: "Questions Fréquentes",
+            description: "La transparence est la clé. Voici des réponses honnêtes aux questions qu'on me pose le plus souvent.",
+            moreQuestions: "Autre question ?",
+            items: [
+                {
+                    question: "Dois-je payer les frais mensuels ?",
+                    answer: "Non, c'est 100% optionnel. Vous pouvez choisir de payer uniquement pour la création du site et gérer l'hébergement vous-même. Cependant, pour juste 50€/mois, je m'assure que votre site reste rapide, sécurisé et en ligne sans que vous leviez le petit doigt."
+                },
+                {
+                    question: "Combien de temps pour créer un site ?",
+                    answer: "Un site vitrine standard prend généralement 4-7 jours. Les plateformes complexes avec des fonctionnalités sur mesure (comme des systèmes de réservation ou e-commerce) prennent généralement 1-3 semaines. Je travaille efficacement pour vous mettre en ligne rapidement."
+                },
+                {
+                    question: "À qui appartient le site ?",
+                    answer: "À vous. Une fois les frais de création payés, vous possédez 100% du code, du design et du contenu. Aucun contrat de verrouillage."
+                },
+                {
+                    question: "Pouvez-vous m'aider à être classé sur Google ?",
+                    answer: "Absolument. Mon service de 'SEO Professionnel' est intégré dans le processus de développement. Je m'assure que votre site est techniquement optimisé pour les algorithmes de Google dès le premier jour."
+                }
+            ]
+        },
         contact: {
             label: "Commencez Votre Transformation",
             title: "Prêt à Scaler Votre",
@@ -352,6 +439,15 @@ export const translations = {
             whatsappBtn: "WhatsApp",
             responseTime: "Réponse : < 24 heures",
             location: "Basé en Italie, clients mondiaux."
+        },
+        footer: {
+            tagline: "Je ne fais pas que coder. Je construis des moteurs numériques haute performance qui font scaler votre business.",
+            explore: "Explorer",
+            startScaling: "Commencer à Scaler",
+            ctaDescription: "Votre entreprise mérite une plateforme numérique performante. Construisons-la ensemble.",
+            ctaButton: "Contactez-moi",
+            rights: "Tous droits réservés.",
+            designed: "Conçu pour l'Impact."
         }
     },
     pl: {
@@ -362,7 +458,7 @@ export const translations = {
             startProject: "Rozpocznij Projekt"
         },
         hero: {
-            status: "Przyjmuję Nowych Klientów",
+            status: "Nowi Klienci Mile Widziani",
             titleStart: "Strony, Które Zmieniają",
             titleEnd: "Odwiedzających w Klientów.",
             subtitle: "Tworzę wydajne strony premium zaprojektowane, aby rozwijać Twój biznes. Przestań tracić klientów przez wolne, przestarzałe strony.",
@@ -370,29 +466,29 @@ export const translations = {
             ctaSecondary: "Zobacz Moje Prace",
             card: {
                 title: "Wzrost Biznesu",
-                subtitle: "Zoptymalizowane pod Konwersję",
-                performance: "Wydajność",
+                subtitle: "Zoptymalizowane pod Conversion & Speed",
+                performance: "Performance",
                 seo: "SEO",
                 secure: "Bezpieczne",
-                ssl: "SSL Gotowy",
-                sales: "Sprzedaż",
-                live: "Na Żywo"
+                ssl: "SSL Ready",
+                sales: "Sales",
+                live: "Live"
             }
         },
         about: {
             title: "Rayen Lazizi",
-            role: "Full Stack Developer & Strateg",
+            role: "Full Stack Developer & Strategist",
             quote: "\"Nie piszę tylko kodu. Buduję cyfrowe aktywa, które przynoszą Ci większe zyski.\"",
             whoAmI: {
                 title: "Kim Jestem?",
-                subtitle: "Twój Partner Technologiczny.",
+                subtitle: "Twój Tech Partner.",
                 p1: "Nie jestem kolejnym freelancerem dostarczającym szablon. Jestem dedykowanym programistą, który rozumie, że Twoja strona to inwestycja.",
                 p2: "Moim celem jest wyróżnienie Twojego biznesu na zatłoczonym rynku. Skupiam się na szybkości, designie i doświadczeniu użytkownika, aby każdy odwiedzający od razu Ci zaufał."
             },
             cards: {
-                results: { title: "Nastawienie na Wyniki", desc: "Focus na ROI, Szybkość i SEO." },
+                results: { title: "Nastawienie na Wyniki", desc: "Focus na ROI, Speed i SEO ranking." },
                 business: { title: "Podejście Biznesowe", desc: "Mówię Twoim językiem, nie tylko kodem." },
-                tech: { title: "Nowoczesne Tech", desc: "Zbudowane na najszybszych technologiach." },
+                tech: { title: "Modern Tech", desc: "Zbudowane na najszybszych technologiach." },
                 expertise: { title: "Ekspertyza", desc: "Ciągła nauka i profesjonalna inżynieria." }
             }
         },
@@ -418,7 +514,7 @@ export const translations = {
                     id: 3,
                     title: "Profesjonalne SEO i Wzrost",
                     description: "Piękna strona jest bezużyteczna, jeśli nikt jej nie znajdzie. Wdrażam profesjonalne techniczne SEO, aby Twój biznes był wysoko w Google.",
-                    features: ["Strategia Rankingu Google", "Optymalizacja Słów Kluczowych", "Poprawa Wydajności"]
+                    features: ["Strategia Rankingu Google", "Optymalizacja Słów Kluczowych", "Poprawa Performance"]
                 },
                 {
                     id: 4,
@@ -432,7 +528,7 @@ export const translations = {
             label: "Wyróżnione Success Story",
             solutionTitle: "Rozwiązanie",
             visitSite: "Odwiedź Stronę",
-            salesLive: "Sprzedaż",
+            salesLive: "Sales",
             live: "Live"
         },
         pricing: {
@@ -460,6 +556,29 @@ export const translations = {
                 }
             ]
         },
+        faq: {
+            title: "Częste Pytania",
+            description: "Przejrzystość to klucz do dobrej współpracy. Oto szczere odpowiedzi na pytania, które słyszę najczęściej.",
+            moreQuestions: "Masz inne pytanie?",
+            items: [
+                {
+                    question: "Czy muszę płacić miesięczny abonament?",
+                    answer: "Nie, to w 100% opcjonalne. Możesz zapłacić tylko za budowę strony i zarządzać hostingiem samodzielnie. Jednak za jedyne 50€/miesiąc dbam o to, by Twoja strona była szybka, bezpieczna i zawsze online."
+                },
+                {
+                    question: "Ile trwa budowa strony?",
+                    answer: "Standardowa strona firmowa powstaje zazwyczaj w 4-7 dni. Rozbudowane platformy z dedykowanymi funkcjami (jak rezerwacje czy e-commerce) zajmują zwykle 1-3 tygodnie. Pracuję sprawnie, byś mógł szybko zacząć działać online."
+                },
+                {
+                    question: "Kto jest właścicielem strony?",
+                    answer: "Ty. Po opłaceniu jednorazowej opłaty za budowę, masz 100% praw do kodu, designu i treści. Żadnych umów wiążących."
+                },
+                {
+                    question: "Czy pomożesz mi być wysoko w Google?",
+                    answer: "Oczywiście. Moja usługa 'Profesjonalne SEO' jest wbudowana w proces tworzenia. Zapewniam, że Twoja strona jest technicznie zoptymalizowana pod algorytmy Google od pierwszego dnia."
+                }
+            ]
+        },
         contact: {
             label: "Rozpocznij Transformację",
             title: "Gotowy na Skalowanie",
@@ -469,6 +588,15 @@ export const translations = {
             whatsappBtn: "WhatsApp",
             responseTime: "Odpowiedź: < 24 godziny",
             location: "Siedziba we Włoszech, klienci globalni."
+        },
+        footer: {
+            tagline: "Nie piszę tylko kodu. Buduję cyfrowe silniki o wysokiej wydajności, które skalują Twój biznes.",
+            explore: "Eksploruj",
+            startScaling: "Zacznij Skalować",
+            ctaDescription: "Twój biznes zasługuje na platformę cyfrową, która działa. Zbudujmy ją razem.",
+            ctaButton: "Skontaktuj się",
+            rights: "Wszelkie prawa zastrzeżone.",
+            designed: "Zaprojektowane dla Wyników."
         }
     }
 };

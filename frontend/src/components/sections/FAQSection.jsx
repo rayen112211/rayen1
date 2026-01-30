@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { faq } from '../../data/mock';
 import { Plus, Minus, HelpCircle } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
     return (
@@ -30,6 +30,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }) => {
 
 const FAQSection = () => {
     const [openIndex, setOpenIndex] = useState(null);
+    const { t } = useLanguage();
 
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -46,20 +47,20 @@ const FAQSection = () => {
                             <HelpCircle size={24} />
                         </div>
                         <h2 className="heading-md text-white">
-                            Common Questions
+                            {t.faq.title}
                         </h2>
                         <p className="text-muted-foreground">
-                            Transparency is key to a good partnership. Here are honest answers to the questions I get asked most often.
+                            {t.faq.description}
                         </p>
                         <a href="#contact" className="inline-block text-primary font-medium hover:underline">
-                            Have another question?
+                            {t.faq.moreQuestions}
                         </a>
                     </div>
 
                     {/* Right: Accordion */}
                     <div className="lg:col-span-8">
                         <div className="bg-background/50 rounded-2xl p-2 md:p-8">
-                            {faq.map((item, index) => (
+                            {t.faq.items.map((item, index) => (
                                 <FAQItem
                                     key={index}
                                     question={item.question}
