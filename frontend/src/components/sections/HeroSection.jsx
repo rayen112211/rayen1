@@ -13,7 +13,7 @@ const HeroSection = () => {
     <section
       id="hero"
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-32"
     >
       {/* Dynamic Background */}
       {/* Dynamic Background - Optimized for Mobile Performance */}
