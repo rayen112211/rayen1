@@ -20,9 +20,7 @@ const StructuredData = () => {
             "name": "Freelance"
         },
         "sameAs": [
-            "https://github.com/rayenlazizi",
-            "https://linkedin.com/in/rayenlazizi"
-            // Add your social media profiles here
+            // User requested to keep only Whatsapp/Email for now
         ],
         "knowsAbout": [
             "React",
@@ -34,9 +32,9 @@ const StructuredData = () => {
             "SEO Optimization",
             "Performance Optimization"
         ],
-        "knowsLanguage": ["English", "French"], // Update with your languages
-        "email": "contact@rayenlazizi.tech",
-        "telephone": "+XXX-XXX-XXXX" // Add your contact number
+        "knowsLanguage": ["English", "French", "Arabic", "Italian"],
+        "email": "rayenazizi112211@gmail.com",
+        "telephone": "+393286762496"
     };
 
     // ProfessionalService Schema - Defines your services

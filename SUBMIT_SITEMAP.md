@@ -6,7 +6,7 @@ Since you've already verified your domain in Google Search Console, here's how t
 
 ### Steps:
 1. Go to: https://search.google.com/search-console/sitemaps?resource_id=sc-domain:rayenlazizi.tech
-2. In the "Add a new sitemap" field, enter: `sitemap.xml`
+2. In the "Add a new sitemap" field, enter: `https://rayenlazizi.tech/sitemap.xml`
 3. Click **Submit**
 
 That's it! Google will start crawling your site immediately.
