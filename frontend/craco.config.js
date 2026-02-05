@@ -49,6 +49,38 @@ const webpackConfig = {
         ],
       };
 
+      // Code Splitting Optimization for Production
+      if (process.env.NODE_ENV === 'production') {
+        webpackConfig.optimization = {
+          ...webpackConfig.optimization,
+          splitChunks: {
+            chunks: 'all',
+            cacheGroups: {
+              // Vendor libraries (node_modules)
+              vendor: {
+                test: /[\\/]node_modules[\\/]/,
+                name: 'vendors',
+                priority: 10,
+                reuseExistingChunk: true,
+              },
+              // Common code shared across components
+              common: {
+                minChunks: 2,
+                priority: 5,
+                reuseExistingChunk: true,
+                name: 'common',
+              },
+              // Separate React and ReactDOM
+              react: {
+                test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+                name: 'react-vendor',
+                priority: 20,
+              },
+            },
+          },
+        };
+      }
+
       // Add health check plugin to webpack if enabled
       if (config.enableHealthCheck && healthPluginInstance) {
         webpackConfig.plugins.push(healthPluginInstance);
