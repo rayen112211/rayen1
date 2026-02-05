@@ -34,7 +34,7 @@ const StructuredData = () => {
         ],
         "knowsLanguage": ["English", "French", "Arabic", "Italian"],
         "email": "rayenazizi112211@gmail.com",
-        "telephone": "+393286762496"
+        "telephone": "+48662250830"
     };
 
     // ProfessionalService Schema - Defines your services

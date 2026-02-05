@@ -7,7 +7,7 @@ export const developerInfo = {
   tagline: "I don't just write code. I build high-performance digital engines that scale your business.",
   bio: "Rayen Lazizi is a Full-Stack Engineer and Digital Consultant with a unique blend of technical expertise and business acumen. Currently pursuing a Computer Engineering degree at the University of Florence, he combines European engineering standards with the agility of startup culture. Rayen has delivered end-to-end digital solutions for startups in Tunisia and international clients, focusing not just on 'websites' but on digital platforms that drive revenue, automate workflows, and elevate brand authority.",
   email: "rayenazizi112211@gmail.com",
-  whatsapp: "+39 328 676 2496",
+  whatsapp: "+48 662 250 830",
   location: "Based in Florence, Italy • Available Globally",
   socials: {
     github: "https://github.com/",
