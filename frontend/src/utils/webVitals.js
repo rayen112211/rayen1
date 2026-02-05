@@ -1,4 +1,4 @@
-import { onCLS, onFID, onLCP, onFCP, onTTFB } from 'web-vitals';
+import { onCLS, onINP, onLCP, onFCP, onTTFB } from 'web-vitals';
 
 /**
  * Sends web vitals metrics to Google Analytics
@@ -16,7 +16,7 @@ function sendToAnalytics({ name, delta, value, id }) {
 
 export function initWebVitals() {
     onCLS(sendToAnalytics);
-    onFID(sendToAnalytics);
+    onINP(sendToAnalytics); // INP replaced FID in web-vitals v3+
     onLCP(sendToAnalytics);
     onFCP(sendToAnalytics);
     onTTFB(sendToAnalytics);
