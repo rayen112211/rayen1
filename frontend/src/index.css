@@ -57,6 +57,15 @@
     font-feature-settings: "ss01", "ss02", "cv01", "cv02";
   }
 
+  /* Support for Arabic typography */
+  [dir="rtl"] body {
+    font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+  }
+
+  .font-arabic {
+    font-family: 'Noto Sans Arabic', sans-serif;
+  }
+
   h1,
   h2,
   h3,

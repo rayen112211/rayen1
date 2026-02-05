@@ -1,16 +1,21 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { translations } from '../data/translations';
 
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-    // Default to English, or check localStorage if you want persistence (optional for now)
-    const [language, setLanguage] = useState('en');
+    // Persistent language selection
+    const [language, setLanguage] = useState(() => {
+        const saved = localStorage.getItem('preferredLanguage');
+        return saved || 'en';
+    });
 
-    // Helper to get nested translation value, e.g. t('hero.title')
-    // But actually, passing the whole object for the current language is often easier.
-    // We will expose the whole current dictionary.
+    useEffect(() => {
+        localStorage.setItem('preferredLanguage', language);
+        // Set document direction for RTL support (Arabic)
+        document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+        document.documentElement.lang = language;
+    }, [language]);
 
     const t = translations[language];
 
@@ -22,7 +27,9 @@ export const LanguageProvider = ({ children }) => {
 
     return (
         <LanguageContext.Provider value={value}>
-            {children}
+            <div dir={language === 'ar' ? 'rtl' : 'ltr'}>
+                {children}
+            </div>
         </LanguageContext.Provider>
     );
 };
