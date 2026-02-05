@@ -13,7 +13,6 @@ const LanguageSwitcher = () => {
         { code: 'it', label: 'Italiano', flagUrl: 'https://flagcdn.com/w40/it.png' },
         { code: 'fr', label: 'Français', flagUrl: 'https://flagcdn.com/w40/fr.png' },
         { code: 'pl', label: 'Polski', flagUrl: 'https://flagcdn.com/w40/pl.png' },
-        { code: 'ar', label: 'العربية', flagUrl: 'https://flagcdn.com/w40/tn.png' }, // Tunisian Flag for Arabic
     ];
 
     // Close click outside

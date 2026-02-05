@@ -12,8 +12,6 @@ export const LanguageProvider = ({ children }) => {
 
     useEffect(() => {
         localStorage.setItem('preferredLanguage', language);
-        // Set document direction for RTL support (Arabic)
-        document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
         document.documentElement.lang = language;
     }, [language]);
 
@@ -27,9 +25,7 @@ export const LanguageProvider = ({ children }) => {
 
     return (
         <LanguageContext.Provider value={value}>
-            <div dir={language === 'ar' ? 'rtl' : 'ltr'}>
-                {children}
-            </div>
+            {children}
         </LanguageContext.Provider>
     );
 };
