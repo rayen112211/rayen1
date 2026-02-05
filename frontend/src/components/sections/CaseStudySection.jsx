@@ -3,6 +3,7 @@ import { caseStudy } from '../../data/mock';
 import { ArrowUpRight, CheckCircle2, ShoppingBag } from 'lucide-react';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
 import { useLanguage } from '../../context/LanguageContext';
+import OptimizedImage from '../ui/OptimizedImage';
 
 const CaseStudySection = () => {
   const sectionRef = useRef(null);
@@ -72,7 +73,7 @@ const CaseStudySection = () => {
                     <div className="w-3 h-3 rounded-full bg-green-500" />
                     <div className="mx-auto w-1/2 h-4 bg-muted/20 rounded text-[10px] text-center text-muted-foreground leading-4">unyamee.shop</div>
                   </div>
-                  <img
+                  <OptimizedImage
                     src={caseStudy.image}
                     alt="Unyamee.shop Preview"
                     className="w-full h-full object-cover object-top mt-8"
