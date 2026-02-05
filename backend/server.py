@@ -105,11 +105,11 @@ async def add_security_headers(request: Request, call_next):
     # Content Security Policy
     response.headers['Content-Security-Policy'] = (
         "default-src 'self'; "
-        "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://www.googletagmanager.com; "
+        "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com; "
         "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
         "font-src 'self' https://fonts.gstatic.com; "
-        "img-src 'self' data: https:; "
-        "connect-src 'self' https://api.rayenlazizi.tech;"
+        "img-src 'self' data: https: https://www.google-analytics.com https://*.google-analytics.com; "
+        "connect-src 'self' https://api.rayenlazizi.tech https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; "
     )
     
     # Caching headers for static assets
