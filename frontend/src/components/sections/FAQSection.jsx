@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Minus, HelpCircle } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import FAQStructuredData from '../seo/FAQStructuredData';
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {
     return (
@@ -37,7 +38,8 @@ const FAQSection = () => {
     };
 
     return (
-        <section className="py-24 bg-card relative">
+        <section id="faq" className="py-24 bg-card relative">
+            <FAQStructuredData />
             <div className="container-padding">
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">

@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://rayenlazizi.tech/sitemap.xml
+
+# Block backend API routes from crawling
+Disallow: /api/
+
+# Crawl delay for politeness (1 second between requests)
+Crawl-delay: 1
+
+# Allow all major search engines
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Slurp
+User-agent: DuckDuckBot
+User-agent: Baiduspider
+User-agent: YandexBot
+Allow: /

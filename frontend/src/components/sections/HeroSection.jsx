@@ -14,6 +14,7 @@ const HeroSection = () => {
       id="hero"
       ref={heroRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-32"
+      aria-label="Hero section - Professional web developer services"
     >
       {/* Dynamic Background */}
       {/* Dynamic Background - Optimized for Mobile Performance */}
@@ -25,20 +26,21 @@ const HeroSection = () => {
 
       <div className="container-padding relative z-10 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Left: Content - Direct & Client Focused */}
-        <div className="text-left space-y-8">
+        <header className="text-left space-y-8">
           <div className="animate-on-scroll opacity-0 space-y-4">
             <span className="inline-flex items-center px-3 py-1 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-medium tracking-wide">
               <span className="w-2 h-2 rounded-full bg-primary mr-2 animate-pulse" />
               {t.hero.status}
             </span>
             <h1 className="heading-xl tracking-tight text-white">
-              {t.hero.titleStart} <br />
-              <span className="text-gradient">{t.hero.titleEnd}</span>
+              Professional Web Developer <br />
+              <span className="text-gradient">Full-Stack Expert in React, Node.js & Python</span>
             </h1>
           </div>
 
           <p className="animate-on-scroll opacity-0 text-muted-foreground text-lg md:text-xl max-w-lg leading-relaxed delay-100">
-            {t.hero.subtitle}
+            Custom web applications with expert SEO optimization and AI integration.
+            I build fast, secure, and scalable solutions for businesses worldwide.
           </p>
 
           <div className="animate-on-scroll opacity-0 flex flex-col sm:flex-row gap-4 pt-4 delay-200">
@@ -60,7 +62,7 @@ const HeroSection = () => {
           </div>
 
 
-        </div>
+        </header>
 
         {/* Right: Visual Abstract - Simplified for Performance & Clarity */}
         <div className="animate-on-scroll opacity-0 relative delay-200 mt-12 lg:mt-0 hidden md:block">
@@ -114,7 +116,7 @@ const HeroSection = () => {
       >
         <ArrowDown size={24} />
       </a>
-    </section>
+    </section >
   );
 };
 

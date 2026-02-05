@@ -5,6 +5,7 @@ import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import { Toaster } from './components/ui/toaster';
 import { LanguageProvider } from './context/LanguageContext';
+import StructuredData from './components/seo/StructuredData';
 
 // New Component Flow
 import HeroSection from './components/sections/HeroSection';
@@ -18,9 +19,10 @@ import ContactSection from './components/sections/ContactSection';
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground selection:bg-primary selection:text-primary-foreground">
+      <StructuredData />
       <Header />
 
-      <main>
+      <main role="main" aria-label="Main content">
         <HeroSection />
         <AboutSection />
         <ServicesSection />
