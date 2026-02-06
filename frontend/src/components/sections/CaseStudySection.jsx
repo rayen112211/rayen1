@@ -66,18 +66,25 @@ const CaseStudySection = () => {
             <div className="relative z-10 group">
               {/* Main Monitor/Laptop Frame */}
               <div className="glass-card p-2 rounded-2xl border border-white/10 shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]">
-                <div className="rounded-xl overflow-hidden aspect-[4/3] lg:aspect-video bg-black relative">
-                  <div className="absolute top-0 w-full h-8 bg-black flex items-center px-4 space-x-2 border-b border-white/10 z-20">
-                    <div className="w-3 h-3 rounded-full bg-red-500" />
-                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                    <div className="w-3 h-3 rounded-full bg-green-500" />
-                    <div className="mx-auto w-1/2 h-4 bg-muted/20 rounded text-[10px] text-center text-muted-foreground leading-4">unyamee.shop</div>
+                <div className="rounded-xl overflow-hidden aspect-[4/3] lg:aspect-video bg-black relative flex flex-col">
+                  {/* Browser Header */}
+                  <div className="w-full h-8 bg-black flex items-center px-4 space-x-2 border-b border-white/10 shrink-0">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
+                    <div className="mx-auto w-1/2 h-4 bg-white/5 rounded text-[10px] text-center text-muted-foreground leading-4 flex items-center justify-center">
+                      <span className="opacity-50">unyamee.shop</span>
+                    </div>
                   </div>
-                  <OptimizedImage
-                    src={caseStudy.image}
-                    alt="Unyamee.shop Preview"
-                    className="w-full h-full object-cover object-top mt-8"
-                  />
+
+                  {/* Image Container */}
+                  <div className="flex-1 relative overflow-hidden bg-zinc-900">
+                    <OptimizedImage
+                      src={caseStudy.image}
+                      alt="Unyamee.shop Preview"
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
 
                   {/* Floating Badge */}
                   <div className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6 glass-card p-3 lg:p-4 rounded-xl flex items-center gap-2 lg:gap-3 animate-float-delayed">

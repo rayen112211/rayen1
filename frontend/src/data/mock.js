@@ -58,7 +58,7 @@ export const caseStudy = {
     "Automated Order Processing",
     "100% Secure Payment Uptime"
   ],
-  image: "/assets/unya-mee-preview.png", // Real screenshot of Unyamee.shop
+  image: "/assets/unya-mee-preview.png?v=2", // Added version to bust mobile cache
   link: "https://unyamee.shop"
 };
 
