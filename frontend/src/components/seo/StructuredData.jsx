@@ -32,7 +32,7 @@ const StructuredData = () => {
             "SEO Optimization",
             "Performance Optimization"
         ],
-        "knowsLanguage": ["English", "French", "Arabic", "Italian"],
+        "knowsLanguage": ["English", "French", "Italian", "Polish"],
         "email": "rayenazizi112211@gmail.com",
         "telephone": "+48662250830"
     };
