@@ -78,19 +78,19 @@ export const translations = {
             ]
         },
         caseStudy: {
-            label: "Featured Success Story",
-            title: "Unyamee.shop – A Global E-Commerce Ecosystem",
-            challenge: "The client needed a scalable, international e-commerce platform capable of handling multi-currency transactions, real-time inventory tracking for thousands of SKUs, and a seamless mobile experience for a fashion-forward audience.",
+            label: "Featured Case Study",
+            title: "Unyamee.shop – Sustainable Fashion Platform",
+            challenge: "A sustainable fashion designer in Warsaw needed an online presence to showcase upcycled fashion pieces and manage workshop bookings. The platform needed to handle e-commerce for one-of-a-kind items while also allowing customers to book creative upcycling workshops.",
             solutionTitle: "The Solution",
-            solution: "I engineered a custom full-stack solution using React and Python. Key features included a dynamic product filtering engine, a secure checkout flow integrated with Stripe, and a custom admin panel that reduced inventory management time by 40%.",
-            visitSite: "Visit Live Site",
+            solution: "Built a custom e-commerce platform with React and Python featuring product showcases for unique upcycled pieces, integrated Stripe payments, workshop booking system, and a custom admin dashboard for inventory and order management.",
+            visitSite: "Visit Site",
             salesLive: "Sales",
             live: "Live",
             results: [
-                "35% Increase in Mobile Conversions",
-                "Sub-2s Page Load Speeds",
-                "Automated Order Processing",
-                "100% Secure Payment Uptime"
+                "Streamlined Workshop Bookings",
+                "Secure Online Payments",
+                "Mobile-Optimized Shopping",
+                "Automated Order Processing"
             ]
         },
         pricing: {
@@ -237,19 +237,19 @@ export const translations = {
             ]
         },
         caseStudy: {
-            label: "Storia di Successo",
-            title: "Unyamee.shop – Un Ecosistema E-Commerce Globale",
-            challenge: "Il cliente necessitava di una piattaforma e-commerce scalabile e internazionale, capace di gestire transazioni multi-valuta, tracciamento inventario in tempo reale per migliaia di SKU e un'esperienza mobile fluida per un pubblico fashion.",
+            label: "Case Study in Evidenza",
+            title: "Unyamee.shop – Piattaforma di Moda Sostenibile",
+            challenge: "Una designer di moda sostenibile a Varsavia aveva bisogno di una presenza online per mostrare pezzi di moda upcyclata e gestire prenotazioni di workshop. La piattaforma doveva gestire e-commerce per articoli unici e permettere ai clienti di prenotare workshop creativi di upcycling.",
             solutionTitle: "La Soluzione",
-            solution: "Ho ingegnerizzato una soluzione full-stack personalizzata usando React e Python. Le funzionalità chiave includono un motore di filtri dinamico, un checkout sicuro integrato con Stripe e un pannello admin che ha ridotto la gestione dell'inventario del 40%.",
-            visitSite: "Visita Sito Live",
-            salesLive: "Sales",
+            solution: "Ho costruito una piattaforma e-commerce personalizzata con React e Python con vetrine per pezzi upcyclati unici, pagamenti integrati con Stripe, sistema di prenotazione workshop e dashboard admin per la gestione di inventario e ordini.",
+            visitSite: "Visita il Sito",
+            salesLive: "Vendite",
             live: "Live",
             results: [
-                "35% Aumento Conversioni Mobile",
-                "Caricamento Pagina < 2s",
-                "Processo Ordini Automatizzato",
-                "100% Uptime Pagamenti Sicuri"
+                "Prenotazioni Workshop Semplificate",
+                "Pagamenti Online Sicuri",
+                "Shopping Ottimizzato per Mobile",
+                "Elaborazione Automatica degli Ordini"
             ]
         },
         pricing: {
@@ -273,7 +273,7 @@ export const translations = {
                     title: "Tranquillità",
                     price: "Da €50/mese",
                     description: "Proteggi il tuo investimento. Gestisco hosting, aggiornamenti e problemi tecnici così non devi mai preoccuparti di plugin o server.",
-                    features: ["Hosting Premium Veloce", "Gestione Nome Dominio", "Aggiornamenti Sicurezza Settimanali", "Monitoraggio Uptime 24/7", "Disdici Quando Vuoi"],
+                    features: ["Hosting Premium Veloce", "Gestione Nome Dominio", "Aggiornamenti Sicurezza Settimanali", "24/7 Uptime Monitoring", "Disdici Quando Vuoi"],
                     badge: "Add-on Consigliato"
                 }
             ]
@@ -289,7 +289,7 @@ export const translations = {
                 },
                 {
                     question: "Quanto tempo ci vuole per costruire un sito?",
-                    answer: "Un sito aziendale standard richiede in genere 4-7 giorni. Piattaforme complesse con funzionalità personalizzate (come sistemi di prenotazione o e-commerce) richiedono solitamente 1-3 settimane. Lavoro in modo efficiente per metterti online velocemente senza sacrificare la qualità."
+                    answer: "Un sito aziendale standard richiede in genere 4-7 giorni. Piattaforme complesse con funzionalità personalizzate (come sistemi di prenotazione o e-commerce) richiedono solitamente 1-3 settimane. I work efficiently to get you online fast without sacrificing quality."
                 },
                 {
                     question: "Chi possiede il sito web?",
@@ -396,19 +396,19 @@ export const translations = {
             ]
         },
         caseStudy: {
-            label: "Succès en Vedette",
-            title: "Unyamee.shop – Un Écosystème E-Commerce Global",
-            challenge: "Le client avait besoin d'une plateforme e-commerce scalable et internationale, capable de gérer des transactions multi-devises, un suivi d'inventaire temps réel pour des milliers de SKU, et une expérience mobile fluide.",
+            label: "Étude de Cas Vedette",
+            title: "Unyamee.shop – Plateforme de Mode Durable",
+            challenge: "Une créatrice de mode durable à Varsovie avait besoin d'une présence en ligne pour présenter des pièces de mode upcyclées et gérer les réservations d'ateliers. La plateforme devait gérer l'e-commerce pour des articles uniques tout en permettant aux clients de réserver des ateliers créatifs d'upcycling.",
             solutionTitle: "La Solution",
-            solution: "J'ai conçu une solution full-stack sur mesure avec React et Python. Les fonctionnalités clés incluent un moteur de filtrage dynamique, un flux de paiement sécurisé intégré avec Stripe, et un panneau admin réduisant le temps de gestion d'inventaire de 40%.",
-            visitSite: "Voir Site Live",
-            salesLive: "Sales",
-            live: "Live",
+            solution: "J'ai construit une plateforme e-commerce personnalisée avec React et Python avec des vitrines pour des pièces upcyclées uniques, paiements intégrés Stripe, système de réservation d'ateliers et tableau de bord admin pour la gestion des stocks et commandes.",
+            visitSite: "Visiter le Site",
+            salesLive: "Ventes",
+            live: "En Direct",
             results: [
-                "35% Augmentation Conversions Mobile",
-                "Vitesse Chargement < 2s",
-                "Traitement Commandes Automatisé",
-                "100% Uptime Paiements Sécurisés"
+                "Réservations d'Ateliers Simplifiées",
+                "Paiements en Ligne Sécurisés",
+                "Shopping Optimisé Mobile",
+                "Traitement Automatisé des Commandes"
             ]
         },
         pricing: {
@@ -555,19 +555,19 @@ export const translations = {
             ]
         },
         caseStudy: {
-            label: "Wyróżnione Success Story",
-            title: "Unyamee.shop – Globalny Ekosystem E-Commerce",
-            challenge: "Klient potrzebował skalowalnej, międzynarodowej platformy e-commerce obsługującej wiele walut, śledzenie zapasów w czasie rzeczywistym dla tysięcy produktów i płynne doświadczenie mobilne.",
+            label: "Wyróżnione Studium Przypadku",
+            title: "Unyamee.shop – Platforma Zrównoważonej Mody",
+            challenge: "Projektantka zrównoważonej mody w Warszawie potrzebowała obecności online, aby prezentować upcyklowane elementy mody i zarządzać rezerwacjami warsztatów. Platforma musiała obsługiwać e-commerce dla unikalnych przedmiotów, a także umożliwiać klientom rezerwację kreatywnych warsztatów upcyklingu.",
             solutionTitle: "Rozwiązanie",
-            solution: "Stworzyłem dedykowane rozwiązanie full-stack używając React i Python. Kluczowe funkcje to dynamiczny silnik filtrowania, bezpieczny checkout zintegrowany ze Stripe i panel admina redukujący czas zarządzania o 40%.",
+            solution: "Zbudowałem niestandardową platformę e-commerce z React i Python z prezentacją unikalnych upcyklowanych rzeczy, zintegrowanymi płatnościami Stripe, systemem rezerwacji warsztatów oraz niestandardowym panelem admina do zarządzania zapasami i zamówieniami.",
             visitSite: "Odwiedź Stronę",
-            salesLive: "Sales",
-            live: "Live",
+            salesLive: "Sprzedaż",
+            live: "Na Żywo",
             results: [
-                "35% Wzrost Konwersji Mobilnych",
-                "Czas Ładowania < 2s",
-                "Automatyczne Przetwarzanie",
-                "100% Uptime Płatności"
+                "Uproszczone Rezerwacje Warsztatów",
+                "Bezpieczne Płatności Online",
+                "Shopping Zoptymalizowany na Mobile",
+                "Zautomatyzowane Przetwarzanie Zamówień"
             ]
         },
         pricing: {

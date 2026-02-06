@@ -47,18 +47,18 @@ export const services = [
 ];
 
 export const caseStudy = {
-  title: "Unyamee.shop – A Global E-Commerce Ecosystem",
-  industry: "Global Retail & Fashion",
-  role: "Lead Full-Stack Developer",
-  challenge: "The client needed a scalable, international e-commerce platform capable of handling multi-currency transactions, real-time inventory tracking for thousands of SKUs, and a seamless mobile experience for a fashion-forward audience.",
-  solution: "I engineered a custom full-stack solution using React and Python. Key features included a dynamic product filtering engine, a secure checkout flow integrated with Stripe, and a custom admin panel that reduced inventory management time by 40%.",
+  title: "Unyamee.shop – Sustainable Fashion Platform",
+  industry: "Sustainable Fashion & Workshops",
+  role: "Full-Stack Developer",
+  challenge: "A sustainable fashion designer in Warsaw needed an online presence to showcase upcycled fashion pieces and manage workshop bookings. The platform needed to handle e-commerce for one-of-a-kind items while also allowing customers to book creative upcycling workshops.",
+  solution: "Built a custom e-commerce platform with React and Python featuring product showcases for unique upcycled pieces, integrated Stripe payments, workshop booking system, and a custom admin dashboard for inventory and order management.",
   results: [
-    "35% Increase in Mobile Conversions",
-    "Sub-2s Page Load Speeds",
-    "Automated Order Processing",
-    "100% Secure Payment Uptime"
+    "Streamlined Workshop Bookings",
+    "Secure Online Payments",
+    "Mobile-Optimized Shopping",
+    "Automated Order Processing"
   ],
-  image: "/assets/unya-mee-preview.png?v=2", // Added version to bust mobile cache
+  image: "/assets/unya-mee-preview.png?v=2",
   link: "https://unyamee.shop"
 };
 
