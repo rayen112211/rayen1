@@ -33,14 +33,13 @@ const HeroSection = () => {
               {t.hero.status}
             </span>
             <h1 className="heading-xl tracking-tight text-white">
-              Professional Web Developer <br />
-              <span className="text-gradient">Full-Stack Expert in React, Node.js & Python</span>
+              {t.hero.titleStart} <br />
+              <span className="text-gradient">{t.hero.titleEnd}</span>
             </h1>
           </div>
 
           <p className="animate-on-scroll opacity-0 text-muted-foreground text-lg md:text-xl max-w-lg leading-relaxed delay-100">
-            Custom web applications with expert SEO optimization and AI integration.
-            I build fast, secure, and scalable solutions for businesses worldwide.
+            {t.hero.subtitle}
           </p>
 
           <div className="animate-on-scroll opacity-0 flex flex-col sm:flex-row gap-4 pt-4 delay-200">
