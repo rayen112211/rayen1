@@ -44,6 +44,11 @@ const StructuredData = () => {
         "name": "Rayen Lazizi Web Development Services",
         "url": "https://rayenlazizi.tech",
         "description": "Professional full-stack web development services including custom web applications, SEO optimization, and performance enhancements",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Florence",
+            "addressCountry": "IT"
+        },
         "provider": {
             "@type": "Person",
             "@id": "https://rayenlazizi.tech/#person",
