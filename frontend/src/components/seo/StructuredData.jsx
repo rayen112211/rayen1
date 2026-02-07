@@ -42,9 +42,11 @@ const StructuredData = () => {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Rayen Lazizi Web Development Services",
+        "url": "https://rayenlazizi.tech",
         "description": "Professional full-stack web development services including custom web applications, SEO optimization, and performance enhancements",
         "provider": {
             "@type": "Person",
+            "@id": "https://rayenlazizi.tech/#person",
             "name": "Rayen Lazizi"
         },
         "areaServed": {
@@ -63,7 +65,12 @@ const StructuredData = () => {
         ],
         "offers": {
             "@type": "Offer",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "EUR",
+                "price": "400"
+            }
         }
     };
 
