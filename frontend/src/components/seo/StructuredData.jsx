@@ -81,6 +81,26 @@ const StructuredData = () => {
         }
     };
 
+    // Organization Schema - Required for Google to show logo in search results
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Rayen Lazizi",
+        "url": "https://rayenlazizi.tech",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://rayenlazizi.tech/favicon-512x512.png",
+            "width": "512",
+            "height": "512"
+        },
+        "description": "Professional full-stack web developer specializing in React, Node.js, Python, and AI integration",
+        "founder": {
+            "@type": "Person",
+            "name": "Rayen Lazizi"
+        },
+        "sameAs": []
+    };
+
     // BreadcrumbList Schema - Helps with site navigation
     const breadcrumbSchema = {
         "@context": "https://schema.org",
