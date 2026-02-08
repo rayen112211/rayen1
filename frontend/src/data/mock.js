@@ -10,8 +10,8 @@ export const developerInfo = {
   whatsapp: "+48 662 250 830",
   location: "Based in Florence, Italy • Available Globally",
   socials: {
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/"
+    github: "https://github.com/rayen112211",
+    linkedin: "https://www.linkedin.com/in/rayen-azizi-5b97843a6/"
   }
 };
 

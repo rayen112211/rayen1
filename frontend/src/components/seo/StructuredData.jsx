@@ -20,7 +20,8 @@ const StructuredData = () => {
             "name": "Freelance"
         },
         "sameAs": [
-            // User requested to keep only Whatsapp/Email for now
+            "https://github.com/rayen112211",
+            "https://www.linkedin.com/in/rayen-azizi-5b97843a6/"
         ],
         "knowsAbout": [
             "React",
