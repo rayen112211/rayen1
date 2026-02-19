@@ -77,20 +77,48 @@ export const translations = {
                 }
             ]
         },
-        caseStudy: {
-            label: "Featured Case Study",
-            title: "Unyamee.shop – Sustainable Fashion Platform",
-            challenge: "A sustainable fashion designer in Warsaw needed an online presence to showcase upcycled fashion pieces and manage workshop bookings. The platform needed to handle e-commerce for one-of-a-kind items while also allowing customers to book creative upcycling workshops.",
-            solutionTitle: "The Solution",
-            solution: "Built a custom e-commerce platform with React and Python featuring product showcases for unique upcycled pieces, integrated Stripe payments, workshop booking system, and a custom admin dashboard for inventory and order management.",
-            visitSite: "Visit Site",
-            salesLive: "Sales",
-            live: "Live",
-            results: [
-                "Streamlined Workshop Bookings",
-                "Secure Online Payments",
-                "Mobile-Optimized Shopping",
-                "Automated Order Processing"
+        projects: {
+            label: "My Work",
+            title: "Projects That",
+            titleGradient: "Deliver Results.",
+            description: "Real businesses, real results. Here are some of the platforms I've designed and built from scratch.",
+            items: [
+                {
+                    title: "La Petite — Fine Dining & Cocktails",
+                    category: "Restaurant",
+                    description: "Luxury restaurant and cocktail bar website for a fine dining establishment in Florence's historic center. Features elegant design, multi-language support, full menu display, and an integrated reservation system.",
+                    tech: ["React", "Vite", "i18n", "Responsive"],
+                    link: "https://lapetite-firenze.vercel.app/",
+                    image: "/assets/lapetite.jpg",
+                    visitLabel: "Visit Site"
+                },
+                {
+                    title: "Kilo Gram — Premium Catering",
+                    category: "Catering Business",
+                    description: "Full-service catering website for a 20+ year business in Warsaw. Includes service showcases, event gallery, SEO optimization with structured data, and bilingual support for Polish and English audiences.",
+                    tech: ["React", "Vite", "SEO", "Schema.org"],
+                    link: "https://kilo-gram-website.vercel.app/",
+                    image: "/assets/kilo-gram.jpg",
+                    visitLabel: "Visit Site"
+                },
+                {
+                    title: "TripWise — AI Travel Planner",
+                    category: "AI / SaaS",
+                    description: "An AI-powered travel planning platform that generates complete personalized itineraries in 30 seconds. Built with a React frontend and Python/Flask backend powered by Google's Gemini AI.",
+                    tech: ["React", "Python", "Flask", "Gemini AI"],
+                    link: "https://trip-wise-eight.vercel.app/",
+                    image: "/assets/tripwise.jpg",
+                    visitLabel: "Visit Site"
+                },
+                {
+                    title: "Unyamee — Sustainable Fashion",
+                    category: "E-Commerce",
+                    description: "Custom e-commerce platform for a sustainable fashion designer in Warsaw. Features product showcases for upcycled pieces, Stripe payments, workshop booking system, and admin dashboard.",
+                    tech: ["React", "Python", "Stripe", "Admin Panel"],
+                    link: "https://unyamee.shop",
+                    image: "/assets/unya-mee-preview.png?v=2",
+                    visitLabel: "Visit Site"
+                }
             ]
         },
         pricing: {
@@ -236,20 +264,48 @@ export const translations = {
                 }
             ]
         },
-        caseStudy: {
-            label: "Case Study in Evidenza",
-            title: "Unyamee.shop – Piattaforma di Moda Sostenibile",
-            challenge: "Una designer di moda sostenibile a Varsavia aveva bisogno di una presenza online per mostrare pezzi di moda upcyclata e gestire prenotazioni di workshop. La piattaforma doveva gestire e-commerce per articoli unici e permettere ai clienti di prenotare workshop creativi di upcycling.",
-            solutionTitle: "La Soluzione",
-            solution: "Ho costruito una piattaforma e-commerce personalizzata con React e Python con vetrine per pezzi upcyclati unici, pagamenti integrati con Stripe, sistema di prenotazione workshop e dashboard admin per la gestione di inventario e ordini.",
-            visitSite: "Visita il Sito",
-            salesLive: "Vendite",
-            live: "Live",
-            results: [
-                "Prenotazioni Workshop Semplificate",
-                "Pagamenti Online Sicuri",
-                "Shopping Ottimizzato per Mobile",
-                "Elaborazione Automatica degli Ordini"
+        projects: {
+            label: "I Miei Lavori",
+            title: "Progetti Che",
+            titleGradient: "Portano Risultati.",
+            description: "Business reali, risultati reali. Ecco alcune delle piattaforme che ho progettato e costruito da zero.",
+            items: [
+                {
+                    title: "La Petite — Fine Dining & Cocktails",
+                    category: "Ristorante",
+                    description: "Sito web per un ristorante di lusso e cocktail bar nel centro storico di Firenze. Design elegante, supporto multilingua, menu completi e sistema di prenotazione integrato.",
+                    tech: ["React", "Vite", "i18n", "Responsive"],
+                    link: "https://lapetite-firenze.vercel.app/",
+                    image: "/assets/lapetite.jpg",
+                    visitLabel: "Visita il Sito"
+                },
+                {
+                    title: "Kilo Gram — Catering Premium",
+                    category: "Azienda Catering",
+                    description: "Sito web completo per un'azienda di catering con 20+ anni di esperienza a Varsavia. Include vetrine servizi, galleria eventi, ottimizzazione SEO con dati strutturati e supporto bilingue.",
+                    tech: ["React", "Vite", "SEO", "Schema.org"],
+                    link: "https://kilo-gram-website.vercel.app/",
+                    image: "/assets/kilo-gram.jpg",
+                    visitLabel: "Visita il Sito"
+                },
+                {
+                    title: "TripWise — AI Travel Planner",
+                    category: "AI / SaaS",
+                    description: "Piattaforma di pianificazione viaggi basata su AI che genera itinerari personalizzati completi in 30 secondi. Frontend React e backend Python/Flask con Google Gemini AI.",
+                    tech: ["React", "Python", "Flask", "Gemini AI"],
+                    link: "https://trip-wise-eight.vercel.app/",
+                    image: "/assets/tripwise.jpg",
+                    visitLabel: "Visita il Sito"
+                },
+                {
+                    title: "Unyamee — Moda Sostenibile",
+                    category: "E-Commerce",
+                    description: "Piattaforma e-commerce personalizzata per una designer di moda sostenibile a Varsavia. Vetrine prodotti upcyclati, pagamenti Stripe, prenotazione workshop e dashboard admin.",
+                    tech: ["React", "Python", "Stripe", "Admin Panel"],
+                    link: "https://unyamee.shop",
+                    image: "/assets/unya-mee-preview.png?v=2",
+                    visitLabel: "Visita il Sito"
+                }
             ]
         },
         pricing: {
@@ -395,20 +451,48 @@ export const translations = {
                 }
             ]
         },
-        caseStudy: {
-            label: "Étude de Cas Vedette",
-            title: "Unyamee.shop – Plateforme de Mode Durable",
-            challenge: "Une créatrice de mode durable à Varsovie avait besoin d'une présence en ligne pour présenter des pièces de mode upcyclées et gérer les réservations d'ateliers. La plateforme devait gérer l'e-commerce pour des articles uniques tout en permettant aux clients de réserver des ateliers créatifs d'upcycling.",
-            solutionTitle: "La Solution",
-            solution: "J'ai construit une plateforme e-commerce personnalisée avec React et Python avec des vitrines pour des pièces upcyclées uniques, paiements intégrés Stripe, système de réservation d'ateliers et tableau de bord admin pour la gestion des stocks et commandes.",
-            visitSite: "Visiter le Site",
-            salesLive: "Ventes",
-            live: "En Direct",
-            results: [
-                "Réservations d'Ateliers Simplifiées",
-                "Paiements en Ligne Sécurisés",
-                "Shopping Optimisé Mobile",
-                "Traitement Automatisé des Commandes"
+        projects: {
+            label: "Mes Projets",
+            title: "Projets Qui",
+            titleGradient: "Livrent des Résultats.",
+            description: "De vrais business, de vrais résultats. Voici quelques plateformes que j'ai conçues et construites de zéro.",
+            items: [
+                {
+                    title: "La Petite — Fine Dining & Cocktails",
+                    category: "Restaurant",
+                    description: "Site web de restaurant de luxe et cocktail bar au cœur historique de Florence. Design élégant, support multilingue, menus complets et système de réservation intégré.",
+                    tech: ["React", "Vite", "i18n", "Responsive"],
+                    link: "https://lapetite-firenze.vercel.app/",
+                    image: "/assets/lapetite.jpg",
+                    visitLabel: "Visiter le Site"
+                },
+                {
+                    title: "Kilo Gram — Catering Premium",
+                    category: "Entreprise Traiteur",
+                    description: "Site web complet pour un traiteur avec 20+ ans d'expérience à Varsovie. Inclut vitrines services, galerie événements, optimisation SEO avec données structurées et support bilingue.",
+                    tech: ["React", "Vite", "SEO", "Schema.org"],
+                    link: "https://kilo-gram-website.vercel.app/",
+                    image: "/assets/kilo-gram.jpg",
+                    visitLabel: "Visiter le Site"
+                },
+                {
+                    title: "TripWise — AI Travel Planner",
+                    category: "AI / SaaS",
+                    description: "Plateforme de planification de voyages IA qui génère des itinéraires personnalisés complets en 30 secondes. Frontend React et backend Python/Flask avec Google Gemini AI.",
+                    tech: ["React", "Python", "Flask", "Gemini AI"],
+                    link: "https://trip-wise-eight.vercel.app/",
+                    image: "/assets/tripwise.jpg",
+                    visitLabel: "Visiter le Site"
+                },
+                {
+                    title: "Unyamee — Mode Durable",
+                    category: "E-Commerce",
+                    description: "Plateforme e-commerce sur mesure pour une créatrice de mode durable à Varsovie. Vitrines produits upcyclés, paiements Stripe, réservation d'ateliers et tableau de bord admin.",
+                    tech: ["React", "Python", "Stripe", "Admin Panel"],
+                    link: "https://unyamee.shop",
+                    image: "/assets/unya-mee-preview.png?v=2",
+                    visitLabel: "Visiter le Site"
+                }
             ]
         },
         pricing: {
@@ -554,20 +638,48 @@ export const translations = {
                 }
             ]
         },
-        caseStudy: {
-            label: "Wyróżnione Studium Przypadku",
-            title: "Unyamee.shop – Platforma Zrównoważonej Mody",
-            challenge: "Projektantka zrównoważonej mody w Warszawie potrzebowała obecności online, aby prezentować upcyklowane elementy mody i zarządzać rezerwacjami warsztatów. Platforma musiała obsługiwać e-commerce dla unikalnych przedmiotów, a także umożliwiać klientom rezerwację kreatywnych warsztatów upcyklingu.",
-            solutionTitle: "Rozwiązanie",
-            solution: "Zbudowałem niestandardową platformę e-commerce z React i Python z prezentacją unikalnych upcyklowanych rzeczy, zintegrowanymi płatnościami Stripe, systemem rezerwacji warsztatów oraz niestandardowym panelem admina do zarządzania zapasami i zamówieniami.",
-            visitSite: "Odwiedź Stronę",
-            salesLive: "Sprzedaż",
-            live: "Na Żywo",
-            results: [
-                "Uproszczone Rezerwacje Warsztatów",
-                "Bezpieczne Płatności Online",
-                "Shopping Zoptymalizowany na Mobile",
-                "Zautomatyzowane Przetwarzanie Zamówień"
+        projects: {
+            label: "Moje Prace",
+            title: "Projekty Które",
+            titleGradient: "Przynoszą Wyniki.",
+            description: "Prawdziwe firmy, prawdziwe wyniki. Oto kilka platform, które zaprojektowałem i zbudowałem od zera.",
+            items: [
+                {
+                    title: "La Petite — Fine Dining & Cocktails",
+                    category: "Restauracja",
+                    description: "Strona luksusowej restauracji i koktajl baru w historycznym centrum Florencji. Elegancki design, wsparcie wielojęzyczne, pełne menu i zintegrowany system rezerwacji.",
+                    tech: ["React", "Vite", "i18n", "Responsive"],
+                    link: "https://lapetite-firenze.vercel.app/",
+                    image: "/assets/lapetite.jpg",
+                    visitLabel: "Odwiedź Stronę"
+                },
+                {
+                    title: "Kilo Gram — Catering Premium",
+                    category: "Firma Cateringowa",
+                    description: "Kompletna strona firmy cateringowej z 20+ letnim doświadczeniem w Warszawie. Zawiera prezentacje usług, galerię eventów, optymalizację SEO z danymi strukturalnymi i wsparcie dwujęzyczne.",
+                    tech: ["React", "Vite", "SEO", "Schema.org"],
+                    link: "https://kilo-gram-website.vercel.app/",
+                    image: "/assets/kilo-gram.jpg",
+                    visitLabel: "Odwiedź Stronę"
+                },
+                {
+                    title: "TripWise — AI Travel Planner",
+                    category: "AI / SaaS",
+                    description: "Platforma planowania podróży oparta na AI, która generuje kompletne spersonalizowane plany w 30 sekund. Frontend React i backend Python/Flask z Google Gemini AI.",
+                    tech: ["React", "Python", "Flask", "Gemini AI"],
+                    link: "https://trip-wise-eight.vercel.app/",
+                    image: "/assets/tripwise.jpg",
+                    visitLabel: "Odwiedź Stronę"
+                },
+                {
+                    title: "Unyamee — Zrównoważona Moda",
+                    category: "E-Commerce",
+                    description: "Dedykowana platforma e-commerce dla projektantki zrównoważonej mody w Warszawie. Prezentacje upcyklowanych produktów, płatności Stripe, rezerwacja warsztatów i panel admina.",
+                    tech: ["React", "Python", "Stripe", "Admin Panel"],
+                    link: "https://unyamee.shop",
+                    image: "/assets/unya-mee-preview.png?v=2",
+                    visitLabel: "Odwiedź Stronę"
+                }
             ]
         },
         pricing: {

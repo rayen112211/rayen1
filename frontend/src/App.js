@@ -11,7 +11,7 @@ import StructuredData from './components/seo/StructuredData';
 import HeroSection from './components/sections/HeroSection';
 import AboutSection from './components/sections/AboutSection';
 import ServicesSection from './components/sections/ServicesSection';
-import CaseStudySection from './components/sections/CaseStudySection';
+import ProjectsSection from './components/sections/ProjectsSection';
 import PricingSection from './components/sections/PricingSection';
 import FAQSection from './components/sections/FAQSection';
 import ContactSection from './components/sections/ContactSection';
@@ -26,7 +26,7 @@ const LandingPage = () => {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
-        <CaseStudySection />
+        <ProjectsSection />
         <PricingSection />
         <FAQSection />
         <ContactSection />
