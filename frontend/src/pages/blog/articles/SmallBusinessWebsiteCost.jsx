@@ -1,6 +1,6 @@
 import React from 'react';
-import MainLayout from '../../components/layout/MainLayout';
-import SEOHead from '../../components/seo/SEOHead';
+import MainLayout from '../../../components/layout/MainLayout';
+import SEOHead from '../../../components/seo/SEOHead';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
