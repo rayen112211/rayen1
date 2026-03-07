@@ -118,6 +118,15 @@ export const translations = {
                     link: "https://unyamee.shop",
                     image: "/assets/unya-mee-preview.png?v=2",
                     visitLabel: "Visit Site"
+                },
+                {
+                    title: "ClientEngine — AI Cold Email System",
+                    category: "AI / Tooling",
+                    description: "A localized, fully automated Python application that uses intelligent lead scoring, real-time SMTP protection, and multi-touch sequencing for client acquisition.",
+                    tech: ["Python", "Flask", "SQLite", "Vanilla JS"],
+                    link: "https://github.com/rayen112211/ClientEngine",
+                    image: "/assets/clientengine.jpg",
+                    visitLabel: "Visit GitHub"
                 }
             ]
         },
@@ -305,6 +314,15 @@ export const translations = {
                     link: "https://unyamee.shop",
                     image: "/assets/unya-mee-preview.png?v=2",
                     visitLabel: "Visita il Sito"
+                },
+                {
+                    title: "ClientEngine — Sistema Email AI",
+                    category: "AI / Tooling",
+                    description: "Un'applicazione Python localizzata e completamente automatizzata che utilizza l'assegnazione intelligente dei punteggi ai lead, la protezione SMTP in tempo reale e sequenze multi-touch per l'acquisizione di clienti.",
+                    tech: ["Python", "Flask", "SQLite", "Vanilla JS"],
+                    link: "https://github.com/rayen112211/ClientEngine",
+                    image: "/assets/clientengine.jpg",
+                    visitLabel: "Visita GitHub"
                 }
             ]
         },
@@ -492,6 +510,15 @@ export const translations = {
                     link: "https://unyamee.shop",
                     image: "/assets/unya-mee-preview.png?v=2",
                     visitLabel: "Visiter le Site"
+                },
+                {
+                    title: "ClientEngine — Système d'Email IA",
+                    category: "AI / Tooling",
+                    description: "Une application Python localisée et entièrement automatisée qui utilise l'évaluation intelligente des leads, la protection SMTP en temps réel et des séquences multi-touch pour l'acquisition de clients.",
+                    tech: ["Python", "Flask", "SQLite", "Vanilla JS"],
+                    link: "https://github.com/rayen112211/ClientEngine",
+                    image: "/assets/clientengine.jpg",
+                    visitLabel: "Visiter GitHub"
                 }
             ]
         },
@@ -679,6 +706,15 @@ export const translations = {
                     link: "https://unyamee.shop",
                     image: "/assets/unya-mee-preview.png?v=2",
                     visitLabel: "Odwiedź Stronę"
+                },
+                {
+                    title: "ClientEngine — System Email AI",
+                    category: "AI / Tooling",
+                    description: "Zlokalizowana, w pełni zautomatyzowana aplikacja w Pythonie, która wykorzystuje inteligentne ocenianie leadów, ochronę SMTP w czasie rzeczywistym i wieloetapowe sekwencje do pozyskiwania klientów.",
+                    tech: ["Python", "Flask", "SQLite", "Vanilla JS"],
+                    link: "https://github.com/rayen112211/ClientEngine",
+                    image: "/assets/clientengine.jpg",
+                    visitLabel: "Odwiedź GitHub"
                 }
             ]
         },
