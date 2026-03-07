@@ -11,11 +11,11 @@ export const translations = {
             startProject: "Start Project"
         },
         hero: {
-            status: "Accepting New Clients",
-            titleStart: "Websites That Turn",
-            titleEnd: "Visitors Into Clients.",
-            subtitle: "I build high-performance, premium websites designed to grow your business. Stop losing customers to slow, outdated sites.",
-            ctaPrimary: "Get a Free Quote",
+            status: "Now Partnering with Ambitious Brands",
+            titleStart: "Stop Losing Customers to a",
+            titleEnd: "Slow, Outdated Website.",
+            subtitle: "I engineer custom, high-speed React applications that dominate local SEO and convert visitors into paying clients. Built for businesses that demand ROI.",
+            ctaPrimary: "Request a Free SEO Audit",
             ctaSecondary: "View My Work",
             card: {
                 title: "Business Growth",
